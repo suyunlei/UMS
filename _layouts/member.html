@@ -46,6 +46,7 @@ layout: default
 </div>
 
 {% assign aliases = page.aliases
+  | default: page.ename
   | default: page.name
   | default: page.title
   | join: ","
@@ -54,7 +55,7 @@ layout: default
 %}
 
 {% capture search -%}
-  research/?search={% for alias in aliases %}"{{ alias }}" {% endfor %}
+  research/?search={{ page.ename }}
 {%- endcapture %}
 
 <p class="center">
