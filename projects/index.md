@@ -7,8 +7,14 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our projet focuses on the quantitative analysis of urban form, spatial structure, and city evolution. We use advanced data analytics, simulation, and modeling techniques to understand how cities grow and transform, aiming to support sustainable urban development and planning.
+
+Key areas of our research include:
+- Urban morphology and spatial patterns
+- Urban growth modeling and simulation
+- Public space analysis and optimization
+- Data-driven approaches for urban planning
+- Integration of GIS and urban informatics
 
 {% include tags.html tags="publication, resource, website" %}
 

@@ -18,13 +18,13 @@ undergrad:
   icon: fa-solid fa-user-graduate
   description: Undergraduate Student
 
-programmer:
+mphil:
   icon: fa-solid fa-code
-  description: Programmer
+  description: Mphil Student
 
-mascot:
+RA:
   icon: fa-solid fa-dog
-  description: Mascot
+  description: Research Assistant
 
 # general
 

@@ -7,29 +7,19 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Welcome to the Urban Morphology Studio team! Our group brings together diverse backgrounds and expertise, working collaboratively to advance urban morphology research and practice.
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+<!-- Display PI (wucai) first -->
+{% include list.html data="members" component="portrait" filter="group == 'professor'" %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+<!-- Then PhD group -->
+{% include list.html data="members" component="portrait" filter="group == 'phd'" %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<!-- Then MPhil group -->
+{% include list.html data="members" component="portrait" filter="group == 'mphil'" %}
 
-{% include section.html %}
+<!-- Then RA group -->
+{% include list.html data="members" component="portrait" filter="group == 'RA'" %}
 
-{% capture content %}
-
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
