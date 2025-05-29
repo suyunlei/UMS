@@ -1,6 +1,7 @@
 ---
-title: Example post 2
-author: jane-smith
+title: 吴偲助理教授受邀参加XXX
+author: wu-cai
+tags: AI
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+吴偲助理教授受邀参加XXX吴偲助理教授受邀参加XXX吴偲助理教授受邀参加XXX
