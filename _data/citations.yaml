@@ -1,5 +1,91 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.cities.2025.105854
+  title: 'Formalising the urban pattern language: A morphological paradigm towards
+    understanding the multi-scalar spatial structure of cities'
+  authors:
+  - Cai Wu
+  - Jiong Wang
+  - Mingshu Wang
+  - Filip Biljecki
+  - Menno-Jan Kraak
+  publisher: Cities
+  date: '2025-06-01'
+  link: https://doi.org/g9fp47
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.1177/23998083241267070
+  title: "\u2018Local Hubs and Global Gateways\u2019: Understanding the impact of\
+    \ Singapore\u2019s master plan on urban polycentricity"
+  authors:
+  - Cai Wu
+  - Mingshu Wang
+  - Jiong Wang
+  - Duncan Smith
+  - Menno-Jan Kraak
+  publisher: 'Environment and Planning B: Urban Analytics and City Science'
+  date: '2024-08-09'
+  link: https://doi.org/g9mnv5
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.1016/j.compenvurbsys.2024.102078
+  title: Machine learning-based characterisation of urban morphology with the street
+    pattern
+  authors:
+  - Cai Wu
+  - Jiong Wang
+  - Mingshu Wang
+  - Menno-Jan Kraak
+  publisher: Computers, Environment and Urban Systems
+  date: '2024-04-01'
+  link: https://doi.org/g9mnv6
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.3390/ijgi13040114
+  title: Mapping Street Patterns with Network Science and Supervised Machine Learning
+  authors:
+  - Cai Wu
+  - Yanwen Wang
+  - Jiong Wang
+  - Menno-Jan Kraak
+  - Mingshu Wang
+  publisher: ISPRS International Journal of Geo-Information
+  date: '2024-03-28'
+  link: https://doi.org/g9mnv7
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.3390/rs14163996
+  title: Identifying Urban Functional Regions from High-Resolution Satellite Images
+    Using a Context-Aware Segmentation Network
+  authors:
+  - Wufan Zhao
+  - Mengmeng Li
+  - Cai Wu
+  - Wen Zhou
+  - Guozhong Chu
+  publisher: Remote Sensing
+  date: '2022-08-17'
+  link: https://doi.org/gtbpgs
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.1016/j.compenvurbsys.2021.101677
+  title: 'Simulating the urban spatial structure with spatial interaction: A case
+    study of urban polycentricity under different scenarios'
+  authors:
+  - Cai Wu
+  - Duncan Smith
+  - Mingshu Wang
+  publisher: Computers, Environment and Urban Systems
+  date: '2021-09-01'
+  link: https://doi.org/gpbbp3
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
 - id: 10.1007/978-3-031-43699-4_42
   title: Humans As Sensors in Urban Digital Twins
   authors:
