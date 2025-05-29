@@ -1,6 +1,6 @@
 ---
 name: 苏云雷
-ename: yunlei su
+ename: Yunlei Su
 image: images/yunlei.png
 description: PhD Student
 role: PhD Student
