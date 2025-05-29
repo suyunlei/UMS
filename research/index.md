@@ -18,7 +18,7 @@ nav:
 
 ## Highlighted
 
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+{% include citation.html lookup="Humans As Sensors in Urban Digital Twins" style="rich" %}
 
 {% include section.html %}
 
