@@ -44,6 +44,7 @@
   text=text
 %}
 
+{% comment %}
 {% capture text %}
 
 我们的项目涵盖城市空间分析、城市增长模拟、公共空间优化等多个方向，致力于解决实际城市问题。
@@ -61,13 +62,14 @@
 
 {%
   include feature.html
-  image="images/photo.jpg"
-  link="projects"
-  title="Our Projects"
+  image="images/photo.jpg" // You might want to change this image back if it was specific to "Projects"
+  link="projects" //
+  title="Projects"
   flip=true
   style="bare"
   text=text
 %}
+{% endcomment %}
 
 {% capture text %}
 
