@@ -1,8 +1,4 @@
-<a
-  href="{{ include.link | relative_url | uri_escape }}"
-  class="feature-highlight-card"
-  aria-label="{{ include.title | default: 'feature link' | regex_strip }}"
->
+<a href="{{ include.link | relative_url | uri_escape }}" class="feature-highlight-card" aria-label="{{ include.title | default: 'feature link' | regex_strip }}">
   <div class="feature-highlight-image-wrapper">
     <img
       src="{{ include.image | relative_url | uri_escape }}"
