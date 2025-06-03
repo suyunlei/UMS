@@ -1,0 +1,153 @@
+$wrap: 800px;
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.feature-image {
+  flex-shrink: 0;
+  width: 40%;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-text {
+  flex-grow: 1;
+}
+
+.feature-title {
+  font-size: var(--large);
+  text-align: center;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.feature[data-flip] {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: $wrap) {
+  .feature {
+    flex-direction: column !important;
+  }
+
+  .feature-image {
+    width: 100%;
+    max-width: calc($wrap / 2);
+  }
+}
+
+.feature-highlight-card {
+  display: block;
+  position: relative;
+  width: 340px; // Adjust width as needed
+  aspect-ratio: 4 / 3.2; // Adjust for desired card proportions
+  border-radius: var(--rounded);
+  overflow: hidden; // Important for containing the zoomed image
+  box-shadow: var(--shadow);
+  margin: 20px auto; // Center card if it's block, or adjust for flex/grid
+  text-decoration: none;
+  color: #ffffff; // Default text color for content inside link on overlay
+
+  &:hover {
+    .feature-highlight-image {
+      transform: scale(1.05); // Slight zoom effect
+    }
+  }
+}
+
+.feature-highlight-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.feature-highlight-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-highlight-content-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; // Aligns content (title, text) to the bottom
+  align-items: center; // Centers content horizontally
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 100%); // Dark gradient overlay
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.feature-highlight-title {
+  font-size: var(--xl); // Example: 1.4rem
+  font-weight: var(--bold); // Example: 600
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.feature-highlight-text {
+  font-size: 0.9rem; // Smaller text for description
+  color: #f0f0f0;
+  width: 100%;
+
+  p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  // Styling for the button included in the 'text' variable
+  .button-wrapper {
+    margin-top: 10px;
+  }
+
+  .button {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    font-weight: var(--semi-bold);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+    }
+
+    // If the button has an icon
+    .icon {
+      margin-right: 5px;
+    }
+  }
+}
+
+/*
+.highlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Or space-around
+  gap: 20px; // Adjust gap between cards
+}
+*/
