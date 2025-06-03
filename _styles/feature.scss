@@ -1,6 +1,3 @@
----
----
-
 $wrap: 800px;
 
 .feature {
@@ -52,7 +49,6 @@ $wrap: 800px;
   }
 }
 
-// Styles for the new highlight card layout
 .feature-highlight-card {
   display: block;
   position: relative;
@@ -147,9 +143,6 @@ $wrap: 800px;
   }
 }
 
-// If you want the highlight cards to appear side-by-side,
-// you'll need to wrap the `{% include feature.html %}` calls in `index.md`
-// with a div (e.g., <div class="highlights-container">) and apply flexbox to it:
 /*
 .highlights-container {
   display: flex;
