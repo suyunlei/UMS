@@ -1,3 +1,64 @@
+// Original feature style (keep this for other pages)
+$wrap: 800px;
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.feature-image {
+  flex-shrink: 0;
+  width: 40%;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-text {
+  flex-grow: 1;
+}
+
+.feature-title {
+  font-size: var(--large);
+  text-align: center;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.feature[data-flip] {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: $wrap) {
+  .feature {
+    flex-direction: column !important;
+  }
+
+  .feature-image {
+    width: 100%;
+    max-width: calc($wrap / 2);
+  }
+}
+
+// New card style for highlights section (SEA.com style)
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 40px 0;
+}
+
 .feature-card {
   position: relative;
   width: calc(50% - 10px);
@@ -7,6 +68,30 @@
   box-shadow: var(--shadow);
   text-decoration: none;
   color: #ffffff;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    
+    .feature-card-image img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.feature-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
 }
 
 .feature-card-overlay {
@@ -15,24 +100,65 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.1) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0) 100%);
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px;
+  justify-content: center; // 垂直居中
+  align-items: center; // 水平居中
+  padding: 25px;
   box-sizing: border-box;
+  text-align: center; // 文字居中
+}
+
+.feature-card-icon {
+  margin-bottom: 20px;
+  
+  img, svg {
+    width: 64px;
+    height: 64px;
+    filter: brightness(0) invert(1); // 确保图标是白色
+  }
 }
 
 .feature-card-title {
-  font-size: 1.5rem; 
-  margin-bottom: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   font-weight: var(--bold);
   color: #ffffff;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  width: 100%; // 保证宽度一致
 }
 
 .feature-card-text {
-  color: rgba(255, 255, 255, 0.95);
-  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  max-width: 80%; // 限制文本宽度使其更集中
   text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+.feature-card-text .button-wrapper {
+  margin-top: 15px;
+}
+
+.feature-card-text .button {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 8px 16px;
+  transition: background 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100%; // 在移动设备上变为单列
+    margin-bottom: 20px;
+  }
 }
