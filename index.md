@@ -18,7 +18,7 @@
 %} -->
 
 {% include section.html %}
-
+<!-- 
 ## Highlights
 
 <div class="feature-cards">
@@ -66,4 +66,4 @@ We have a multidisciplinary team with members from urban planning, geographic in
 %}
 
 </div>
-
+ -->

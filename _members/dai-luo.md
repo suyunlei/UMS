@@ -2,9 +2,9 @@
 name: 张戴洛
 ename: Dailuo Zhang
 image: images/dailuo.png
-description: Visiting scholar
-role: Visiting scholar
-group: Visiting scholar
+description: PhD Student
+role: PhD Student
+group: PhD Student
 education:
   - M.Eng in Urban and Rural Planning, Guangdong University of Technology 2025
   - B.Eng in Urban and Rural Planning, Guangdong University of Technology 2022
