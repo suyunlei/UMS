@@ -6,8 +6,7 @@ nav:
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
-
-欢迎与Urban Morphology Studio取得联系！如有合作、咨询或加入团队的意向，欢迎通过以下方式联系我们。
+Welcome to contact Urban Morphology Studio! If you have intentions for collaboration, consultation, or joining our team, please feel free to contact us through the following methods.
 
 {%
   include button.html
@@ -23,7 +22,7 @@ nav:
 {%
   include figure.html
   image="images/hkustgz.png"
-  caption="香港科技大学广州"
+  caption="HKUST(GZ)"
 %}
 
 {% endcapture %}
