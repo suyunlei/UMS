@@ -8,6 +8,11 @@
     >
   </div>
   <div class="feature-card-overlay">
+    {% if include.icon %}
+      <div class="feature-card-icon">
+        {{ include.icon }}
+      </div>
+    {% endif %}
     {% if include.title %}
       <h3 class="feature-card-title">{{ include.title }}</h3>
     {% endif %}
