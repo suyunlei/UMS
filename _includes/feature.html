@@ -1,27 +1,25 @@
-<div
-  class="feature"
-  {% if include.flip %}
-    data-flip
-  {% endif %}
+<a
+  href="{{ include.link | relative_url | uri_escape }}"
+  class="feature-highlight-card"
+  aria-label="{{ include.title | default: 'feature link' | regex_strip }}"
 >
-  <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
-    {% endif %}
-    class="feature-image"
-    aria-label="{{ include.title | default: "feature link" | regex_strip }}"
-  >
+  <div class="feature-highlight-image-wrapper">
     <img
       src="{{ include.image | relative_url | uri_escape }}"
       loading="lazy"
-      alt="{{ include.title | default: "feature image" | regex_strip }}"
+      alt="{{ include.title | default: 'feature image' | regex_strip }}"
+      class="feature-highlight-image"
       {% include fallback.html %}
     >
-  </a>
-  <div class="feature-text">
-    {% if include.title %}
-      <p class="feature-title">{{ include.title }}</p>
-    {% endif %}
-    {{ include.text | markdownify }}
   </div>
-</div>
+  <div class="feature-highlight-content-overlay">
+    {% if include.title %}
+      <h3 class="feature-highlight-title">{{ include.title }}</h3>
+    {% endif %}
+    {% if include.text %}
+      <div class="feature-highlight-text">
+        {{ include.text | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+</a>
