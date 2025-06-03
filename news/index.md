@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-feather-pointed" %}News
 
-欢迎来到Urban Morphology Studio的新闻！这里我们分享团队的最新动态、研究进展、学术思考以及与城市形态学相关的各类资讯。欢迎关注我们的成长与探索。
+Welcome to the Urban Morphology Studio news! Here we share the team's latest updates, research progress, academic insights, and various information related to urban morphology. Follow our growth and exploration.
 
 {% include section.html %}
 
