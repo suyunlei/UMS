@@ -62,8 +62,8 @@
 
 {%
   include feature.html
-  image="images/photo.jpg" // You might want to change this image back if it was specific to "Projects"
-  link="projects" //
+  image="images/photo.jpg"
+  link="projects"
   title="Projects"
   flip=true
   style="bare"
