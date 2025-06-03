@@ -29,7 +29,7 @@
   text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
-  style="bare" // For better appearance on overlay, this button will be restyled by feature.scss
+  style="bare"
 %}
 {% endcapture %}
 
