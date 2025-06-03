@@ -21,6 +21,8 @@
 
 ## Highlights
 
+<div class="feature-cards">
+
 {% capture text_research %}
 我们关注城市空间结构的多样性与复杂性，结合数据分析与建模，推动城市形态学理论与实践的进步。
 {%
@@ -60,3 +62,5 @@
   title="Our Team"
   text=text_team
 %}
+
+</div>

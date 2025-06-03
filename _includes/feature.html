@@ -1,19 +1,18 @@
-<a href="{{ include.link | relative_url | uri_escape }}" class="feature-highlight-card" aria-label="{{ include.title | default: 'feature link' | regex_strip }}">
-  <div class="feature-highlight-image-wrapper">
-    <img
-      src="{{ include.image | relative_url | uri_escape }}"
+<a href="{{ include.link | relative_url | uri_escape }}" class="feature-card">
+  <div class="feature-card-image">
+    <img 
+      src="{{ include.image | relative_url | uri_escape }}" 
+      alt="{{ include.title | default: 'feature image' | regex_strip }}" 
       loading="lazy"
-      alt="{{ include.title | default: 'feature image' | regex_strip }}"
-      class="feature-highlight-image"
       {% include fallback.html %}
     >
   </div>
-  <div class="feature-highlight-content-overlay">
+  <div class="feature-card-overlay">
     {% if include.title %}
-      <h3 class="feature-highlight-title">{{ include.title }}</h3>
+      <h3 class="feature-card-title">{{ include.title }}</h3>
     {% endif %}
     {% if include.text %}
-      <div class="feature-highlight-text">
+      <div class="feature-card-text">
         {{ include.text | markdownify }}
       </div>
     {% endif %}
