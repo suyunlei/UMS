@@ -5,6 +5,7 @@ $page: 1000px;
 $padding: 40px;
 
 section {
+  position: relative;
   padding: $padding max($padding, calc((100% - $page) / 2));
   transition: background var(--transition), color var(--transition);
 }
@@ -36,4 +37,15 @@ main > section:nth-of-type(odd) {
 
 main > section:nth-of-type(even) {
   background: var(--background-alt);
+}
+
+/* 关键：确保section内的绝对定位元素能正常工作 */
+section .feature-card,
+section .feature-card-image,
+section .feature-card-overlay {
+  position: absolute !important;
+}
+
+section .feature-card {
+  position: relative !important; /* 卡片本身是相对定位 */
 }
