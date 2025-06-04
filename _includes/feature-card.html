@@ -1,0 +1,25 @@
+<a href="{{ include.link | relative_url | uri_escape }}" class="feature-card">
+  <div class="feature-card-image">
+    <img 
+      src="{{ include.image | relative_url | uri_escape }}" 
+      alt="{{ include.title | default: 'feature image' | regex_strip }}" 
+      loading="lazy"
+      {% include fallback.html %}
+    >
+  </div>
+  <div class="feature-card-overlay">
+    {% if include.icon %}
+      <div class="feature-card-icon">
+        {{ include.icon }}
+      </div>
+    {% endif %}
+    {% if include.title %}
+      <h3 class="feature-card-title">{{ include.title }}</h3>
+    {% endif %}
+    {% if include.text %}
+      <div class="feature-card-text">
+        {{ include.text | markdownify }}
+      </div>
+    {% endif %}
+  </div>
+</a>
