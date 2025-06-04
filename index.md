@@ -16,9 +16,9 @@
   text="On GitHub"
   link="greenelab/lab-website-template"
 %} -->
-<!-- 
-{% include section.html %}
-## Highlights
+
+{% include section.html %} 
+<!-- ## Highlights
 
 < class="feature-cards">
 
