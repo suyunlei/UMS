@@ -54,10 +54,13 @@ $wrap: 800px;
 .feature-cards {
   display: flex !important;
   flex-wrap: wrap !important;
-  justify-content: space-between !important;
+  justify-content: space-between !important; 
   gap: 20px !important;
   margin: 40px 0 !important;
   position: relative !important;
+  width: 100% !important; /* 确保占满整个宽度 */
+  height: auto !important; /* 让高度自适应内容 */
+  overflow: visible !important; /* 防止内容被裁剪 */
 }
 
 .feature-card {
