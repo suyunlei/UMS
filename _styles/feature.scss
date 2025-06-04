@@ -61,15 +61,16 @@ $wrap: 800px;
 }
 
 .feature-card {
-  position: relative !important;
+    position: relative !important;
   width: calc(50% - 10px) !important;
-  aspect-ratio: 16 / 9 !important; 
+  aspect-ratio: 16 / 9 !important;
   border-radius: var(--rounded) !important;
   overflow: hidden !important;
   box-shadow: var(--shadow) !important;
   text-decoration: none !important;
   color: #ffffff !important;
   transition: transform 0.3s ease !important;
+  display: inline-block !important;
   
   &:hover {
     transform: translateY(-5px) !important;
