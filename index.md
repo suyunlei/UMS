@@ -26,8 +26,6 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
 
 {% include section.html %} 
 
-## Latest News
-
 <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
   <div style="flex: 1; min-width: 300px;">
     <h3 style="border-bottom: 2px solid #4f8cff; padding-bottom: 10px; margin-bottom: 20px;">
