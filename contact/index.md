@@ -13,6 +13,8 @@ UMS Urban Morphology Studio warmly welcomes students from diverse academic backg
 
 Supported by the Hong Kong University of Science and Technology (Guangzhou)'s advanced research infrastructure and international academic ecosystem, we offer our members robust resources—ranging from high-performance computing facilities to well-equipped workspaces and a quality living environment. We sincerely invite aspiring scholars committed to urban spatial research and innovation to join us in shaping the future of our lab.
 
+---
+
 ### Prospective Doctoral Candidates
 
 We are currently recruiting 1–2 PhD students for Fall 2025 and Spring 2026. We welcome outstanding candidates who are interested in the following research areas:
@@ -30,6 +32,8 @@ We are looking for candidates who meet the following qualifications:
 *   Strong English communication, reading, and academic writing skills, and fulfillment of HKUST PhD program admission requirements;
 *   Prior research experience and publications in reputable international or domestic academic journals will be considered a significant advantage.
 
+---
+
 ### Research assistants and Visiting Students
 
 UMS Urban Morphology Studio welcomes applications year-round from research assistants (RAs) and visiting students who are passionate about our research themes. We encourage students from diverse academic backgrounds to engage in interdisciplinary collaboration and explore innovative topics related to urban form and the built environment.
@@ -41,6 +45,8 @@ We are looking for candidates who meet the following basic criteria:
 *   Relevant academic background and foundational skills; applicants with experience in data processing or spatial analysis will be given priority.
 
 We offer research assistants and visiting students competitive compensation, flexible working arrangements, and comprehensive academic guidance and support to foster growth and development in their research careers.
+
+---
 
 ## How to Apply
 
@@ -77,3 +83,4 @@ The Hong Kong University of Science and Technology (Guangzhou)
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 %}
+

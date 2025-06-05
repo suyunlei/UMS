@@ -41,7 +41,7 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
       {% endfor %}
     </ul>
     <div style="text-align: right; margin-top: 15px;">
-      <a href="news/" style="text-decoration: none; color: #4f8cff;">查看更多 →</a>
+      <a href="news/" style="text-decoration: none; color: #4f8cff;">More →</a>
     </div>
   </div>
   
@@ -59,7 +59,7 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
       {% endfor %}
     </ul>
     <div style="text-align: right; margin-top: 15px;">
-      <a href="news/" style="text-decoration: none; color: #ffb347;">查看更多 →</a>
+      <a href="news/" style="text-decoration: none; color: #ffb347;">More →</a>
     </div>
   </div>
 </div>
