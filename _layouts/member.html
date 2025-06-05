@@ -24,10 +24,10 @@ layout: default
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem;">
   {% if page.education %}
   <div style="flex: 1; min-width: 250px; background: #f7f7fa; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h2 style="border-left: 4px solid #4f8cff; padding-left: 0.5rem; color: #2a3b4d;">🎓 Education Background</h2>
+    <h3 style="border-left: 4px solid #4f8cff; padding-left: 0.5rem; color: #2a3b4d;">Education</h3>
     <ul style="margin-top: 1rem;">
       {% for edu in page.education %}
-        <li style="margin-bottom: 0.5rem;">{{ edu }}</li>
+        <li style="margin-bottom: 0.5rem;">🎓 {{ edu }}</li>
       {% endfor %}
     </ul>
   </div>
@@ -35,7 +35,7 @@ layout: default
 
   {% if page.research_interest %}
   <div style="flex: 1; min-width: 250px; background: #f7f7fa; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h2 style="border-left: 4px solid #ffb347; padding-left: 0.5rem; color: #2a3b4d;">🔬 Research Interest</h2>
+    <h3 style="border-left: 4px solid #ffb347; padding-left: 0.5rem; color: #2a3b4d;">Research Interest</h3>
     <ul style="margin-top: 1rem;">
       {% for interest in page.research_interest %}
         <li style="margin-bottom: 0.5rem;">{{ interest }}</li>
