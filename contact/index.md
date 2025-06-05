@@ -7,13 +7,15 @@ nav:
 # {% include icon.html icon="fa-solid fa-envelope" %}Contact
 Welcome to contact Urban Morphology Studio! If you have intentions for collaboration, consultation, or joining our team, please feel free to contact us through the following methods.
 
+---
+
 ## Join us
 
 UMS Urban Morphology Studio warmly welcomes students from diverse academic backgrounds who are passionate about urban issues. We emphasize interdisciplinary collaboration and knowledge co-creation, and advocate for a mentorship model grounded in mutual learning. Our goal is to foster a healthy, equitable, and open research environment built on respectful and supportive relationships between faculty and students.
 
 Supported by the Hong Kong University of Science and Technology (Guangzhou)'s advanced research infrastructure and international academic ecosystem, we offer our members robust resources—ranging from high-performance computing facilities to well-equipped workspaces and a quality living environment. We sincerely invite aspiring scholars committed to urban spatial research and innovation to join us in shaping the future of our lab.
 
----
+<hr>
 
 ### Prospective Doctoral Candidates
 
@@ -32,7 +34,7 @@ We are looking for candidates who meet the following qualifications:
 *   Strong English communication, reading, and academic writing skills, and fulfillment of HKUST PhD program admission requirements;
 *   Prior research experience and publications in reputable international or domestic academic journals will be considered a significant advantage.
 
----
+<hr>
 
 ### Research assistants and Visiting Students
 
@@ -46,7 +48,7 @@ We are looking for candidates who meet the following basic criteria:
 
 We offer research assistants and visiting students competitive compensation, flexible working arrangements, and comprehensive academic guidance and support to foster growth and development in their research careers.
 
----
+<hr>
 
 ## How to Apply
 
@@ -71,7 +73,7 @@ Required application materials include:
 
 {% include section.html dark=false %}
 
-{% capture col1 %}
+<!-- {% capture col1 %}
 中国广东省广州市
 南沙区东涌镇笃学路1号
 香港科技大学广州
@@ -80,7 +82,8 @@ Required application materials include:
 {% capture col2 %}
 No. 1 Duxue Road, Dongchong Town, Nansha District, Guangzhou, Guangdong Province, China  
 The Hong Kong University of Science and Technology (Guangzhou)
-{% endcapture %}
+{% endcapture %} -->
 
-{% include cols.html col1=col1 col2=col2 %}
+<!-- {% include cols.html col1=col1 col2=col2 %} -->
+
 
