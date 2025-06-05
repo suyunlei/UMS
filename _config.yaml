@@ -1,7 +1,6 @@
 # site properties and page defaults
-title: UMS
-subtitle: Urban Morphology Studio
-description: An easy-to-use, flexible website template for labs, with automatic citations, GitHub tag imports, pre-built components, and more.
+title: Urban Morphology Studio
+description: A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.
 header: images/background.jpg
 footer: images/background.jpg
 proofer: false

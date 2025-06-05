@@ -25,3 +25,43 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
 %}
 
 {% include section.html %} 
+
+## Latest News
+
+<div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 30px;">
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="border-bottom: 2px solid #4f8cff; padding-bottom: 10px; margin-bottom: 20px;">
+      {% include icon.html icon="fa-solid fa-newspaper" %} Research Updates
+    </h3>
+    <ul style="list-style-type: none; padding: 0;">
+      {% assign research_posts = site.posts | where_exp: "post", "post.tags contains 'Urban-morphology' or post.tags contains 'digital-twins'" | limit: 5 %}
+      {% for post in research_posts %}
+        <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
+          <a href="{{ post.url | relative_url }}" style="flex-grow: 1; text-decoration: none; color: inherit;">{{ post.title }}</a>
+          <span style="color: #666; font-size: 0.9em; white-space: nowrap;">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <div style="text-align: right; margin-top: 15px;">
+      <a href="news/" style="text-decoration: none; color: #4f8cff;">查看更多 →</a>
+    </div>
+  </div>
+  
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="border-bottom: 2px solid #ffb347; padding-bottom: 10px; margin-bottom: 20px;">
+      {% include icon.html icon="fa-solid fa-bullhorn" %} Announcements
+    </h3>
+    <ul style="list-style-type: none; padding: 0;">
+      {% assign announcement_posts = site.posts | where_exp: "post", "post.tags contains 'artificial-intelligence'" | limit: 5 %}
+      {% for post in announcement_posts %}
+        <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
+          <a href="{{ post.url | relative_url }}" style="flex-grow: 1; text-decoration: none; color: inherit;">{{ post.title }}</a>
+          <span style="color: #666; font-size: 0.9em; white-space: nowrap;">{{ post.date | date: "%Y-%m-%d" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <div style="text-align: right; margin-top: 15px;">
+      <a href="news/" style="text-decoration: none; color: #ffb347;">查看更多 →</a>
+    </div>
+  </div>
+</div>
