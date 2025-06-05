@@ -15,9 +15,9 @@ button {
   margin: 5px;
   padding: 8px 15px;
   border: none;
-  border-radius: var(--rounded);
-  background: var(--primary);
-  color: var(--background);
+  border-radius: 15px;
+  background: #0795d9 !important;
+  color: white !important;
   text-align: center;
   font: inherit;
   font-family: var(--heading);
@@ -36,7 +36,7 @@ button {
 .button[data-style=bare] {
   padding: 5px;
   background: none;
-  color: var(--primary);
+  color: #0795d9;
 }
 .button[data-style=bare]:hover {
   color: var(--text);
