@@ -3,7 +3,7 @@ name: 杜家旺
 image: images/jiawang.png
 role: Research Assistant
 description: Research Assistant
-group: RA
+group: hold
 links:
   github: jiawang
 ---

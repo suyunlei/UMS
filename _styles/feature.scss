@@ -62,26 +62,26 @@ $wrap: 800px;
   height: auto !important; /* 让高度自适应内容 */
   overflow: visible !important; /* 防止内容被裁剪 */
 }
+.feature-card-wrapper {
+  width: calc(50% - 10px) !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+  padding-top: 56.25% !important; /* 16:9 比例 */
+}
 
 .feature-card {
-    position: relative !important;
-  width: calc(50% - 10px) !important;
-  aspect-ratio: 16 / 9 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
   border-radius: var(--rounded) !important;
   overflow: hidden !important;
   box-shadow: var(--shadow) !important;
   text-decoration: none !important;
   color: #ffffff !important;
   transition: transform 0.3s ease !important;
-  display: inline-block !important;
-  
-  &:hover {
-    transform: translateY(-5px) !important;
-    
-    .feature-card-image img {
-      transform: scale(1.05) !important;
-    }
-  }
+  display: block !important;
 }
 
 .feature-card-image {
@@ -90,6 +90,7 @@ $wrap: 800px;
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
+  z-index: 1 !important;
   
   img {
     width: 100% !important;
@@ -105,15 +106,21 @@ $wrap: 800px;
   left: 0 !important;
   width: 100% !important;
   height: 100% !important;
+  z-index: 2 !important;
   background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0) 100%) !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important; // 垂直居中
-  align-items: center !important; // 水平居中
+  justify-content: flex-end !important; /* 内容靠近底部 */
+  align-items: center !important;
   padding: 25px !important;
   box-sizing: border-box !important;
-  text-align: center !important; // 文字居中
-  z-index: 2 !important;
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  .feature-card-wrapper {
+    width: 100% !important;
+  }
 }
 
 .feature-card-icon {
