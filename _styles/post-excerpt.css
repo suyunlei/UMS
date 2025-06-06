@@ -40,6 +40,7 @@
 .post-excerpt-text > a:first-child {
   width: 100%;
   font-weight: var(--semi-bold);
+  font-size: x-large;
 }
 
 .post-excerpt-text > div {
