@@ -1,8 +1,8 @@
 # site properties and page defaults
 title: Urban Morphology Studio
 description: A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.
-header: images/background.jpg
-footer: images/background.jpg
+header: images/background.gif
+footer: images/background.gif
 proofer: false
 
 # site social media and other links
