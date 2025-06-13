@@ -9,7 +9,7 @@
 
 <header
   class="background"
-  style="--image: url('{{ image | relative_url | uri_escape }}')"
+  style="--image: url('{{ '/images/background.gif' | relative_url | uri_escape }}')"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
@@ -19,7 +19,7 @@
 >
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
-      <span class="logo">
+      <span class="logo" style="display: none;">
         {% if svg %}
           {{ svg | file_read }}
         {% else %}
