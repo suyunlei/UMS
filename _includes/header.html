@@ -13,9 +13,11 @@
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
+  {% comment %}
   {% if page.url == "/" %}
     data-big
   {% endif %}
+  {% endcomment %}
 >
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
@@ -28,7 +30,7 @@
       </span>
     {% endif %}
     {% if site.logo-text != false %}
-      <span class="title-text">
+      <span class="title-text" {% if page.url == "/" %}style="display: none;"{% endif %}>
         {% if site.title and site.show-title != false %}
           <span class="title">{{ site.title }}</span>
         {% endif %}
