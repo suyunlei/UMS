@@ -14,17 +14,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  opacity: 0.25;
   z-index: -1;
-  /* 保持背景图片原始高度的关键 */
   height: 100%;
   width: 100%;
 }
 
-/* 特别为header设置的背景规则 */
-header.background:before {
-  height: auto;
-  min-height: 200px; /* 设置最小高度 */
-  padding-bottom: 25%; /* 或使用比例设置高度 */
+/* 普通页面的header背景 */
+header.background:not([data-big]):before {
+  min-height: 60px;
+}
+
+/* 首页的header背景 */
+header.background[data-big]:before {
+  min-height: 250px;
+  padding-bottom: 15%; /* 比之前25%更小 */
 }
 
 /*# sourceMappingURL=background.css.map */

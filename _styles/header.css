@@ -7,9 +7,7 @@ header {
   gap: 20px;
   padding: 20px;
   box-shadow: var(--shadow);
-  /* 增加最小高度以匹配背景图片 */
-  min-height: 200px;
-  /* 调整内部元素布局 */
+  min-height: 60px;
   position: relative;
   position: sticky !important;
   top: 0;
@@ -133,8 +131,8 @@ header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 20px;
-  top: unset;
+  padding: 70px 20px;
+  min-height: 250px;
 }
 header[data-big] .home {
   flex-direction: column;
@@ -154,6 +152,10 @@ header[data-big] .title {
 }
 header[data-big] .subtitle {
   font-size: var(--large);
+}
+
+header[data-not-sticky] {
+  position: relative !important;
 }
 
 /*# sourceMappingURL=header.css.map */
