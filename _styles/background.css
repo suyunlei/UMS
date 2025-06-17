@@ -14,21 +14,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.25;
+  opacity: 0.9;
   z-index: -1;
   height: 100%;
   width: 100%;
 }
 
 /* 普通页面的header背景 */
-header.background:not([data-big]):before {
+header.background:not([data-home-background]):before {
   min-height: 60px;
 }
 
 /* 首页的header背景 */
-header.background[data-big]:before {
+header.background[data-home-background]:before {
   min-height: 250px;
-  padding-bottom: 15%; /* 比之前25%更小 */
+  padding-bottom: 15%;
 }
 
 /*# sourceMappingURL=background.css.map */
