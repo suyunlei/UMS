@@ -3,7 +3,7 @@
 
 $logo-big: 80px;
 $logo: 40px;
-$big-padding: 100px;
+$big-padding: 70px; // 从100px减小到70px
 $collapse: 700px;
 $sticky: true;
 
@@ -15,9 +15,7 @@ header {
   gap: 20px;
   padding: 20px;
   box-shadow: var(--shadow);
-  /* 增加最小高度以匹配背景图片 */
-  min-height: 200px;
-  /* 调整内部元素布局 */
+  min-height: 60px; // 减小常规页面的最小高度
   position: relative;
 
   @if $sticky {
@@ -144,15 +142,13 @@ header:not([data-big]) {
   }
 }
 
+// 首页大背景样式
 header[data-big] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: $big-padding 20px;
-
-  @if $sticky {
-    top: unset;
-  }
+  min-height: 250px; // 设置首页较大但比原来小的高度
 
   .home {
     flex-direction: column;
@@ -177,4 +173,9 @@ header[data-big] {
   .subtitle {
     font-size: var(--large);
   }
+}
+
+// 禁用首页的sticky效果
+header[data-not-sticky] {
+  position: relative !important;
 }

@@ -13,11 +13,10 @@
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
-  {% comment %}
   {% if page.url == "/" %}
     data-big
+    data-not-sticky
   {% endif %}
-  {% endcomment %}
 >
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
