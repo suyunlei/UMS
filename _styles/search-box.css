@@ -1,6 +1,8 @@
 .search-box {
   position: relative;
   height: 40px;
+  border: solid 1px var(--light-gray);
+  border-radius: var(--rounded);
 }
 
 .search-box .search-input {

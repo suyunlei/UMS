@@ -64,22 +64,14 @@
 <meta property="twitter:image" content="/UMS/images/share.jpg">
 
 
-  <meta name="author" content="Koichi-ito">
-  <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="2025-06-18T08:11:49+00:00">
-  <meta property="article:published_time" content="2025-04-07T00:00:00+00:00">
-  <meta property="article:modified_time" content="2025-06-18T08:11:49+00:00">
-  <meta name="revised" content="2025-06-18T08:11:49+00:00">
+  <meta property="og:type" content="website">
 
 
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     
-      "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "Decarbonising the City webinar" },
-      "datePublished": "2025-04-07T00:00:00+00:00",
-      "dateModified": "2025-06-18T08:11:49+00:00",
+      "@type": "WebSite",
     
     "name": "Decarbonising the City webinar",
     "description": "A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.",
@@ -251,6 +243,10 @@
   
 
   
+    <link href="/UMS/_styles/post.css" rel="stylesheet">
+  
+
+  
     <link href="/UMS/_styles/quote.css" rel="stylesheet">
   
 
@@ -395,29 +391,33 @@
   
   
 
-  <section class="background" data-size="1" style="--image: url('/UMS/images/koichi.png')">
+  <section class="background" data-size="page">
+    <!-- 移除原来的带背景图片的section -->
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
     <!--
-  <background>images/koichi.png</background>
+  <background></background>
   <dark></dark>
-  <size>1</size>
+  <size></size>
 -->
 
 
-
-<h1 class="center">Decarbonising the City webinar</h1>
-
-<div class="post-info">
+<div class="post-container">
+  <!-- 添加文章特色图片 -->
   
-    
-    
-      
-      
-        <span>
-          <i class="icon fa-solid fa-feather-pointed"></i>
-          <span>koichi-ito</span>
-        </span>
-      
-    
+    <div class="post-featured-image">
+      <img src="/UMS/images/koichi.jpg" alt="Decarbonising the City webinar">
+    </div>
+  
+
+  <h1 class="post-title">Decarbonising the City webinar</h1>
+
+  <div class="post-info">
   
 
   
@@ -490,23 +490,15 @@
   display: none !important;
 }
 </style>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
 
 
-<p>In the first part of my presentation, I will discuss my systematic review examining the relationship between visual data and human perception across 393 scientific papers. Through advanced computational techniques including natural language processing and large language models, I identified significant methodological trends, research gaps, and future directions in this rapidly expanding field. The review reveals an evolution toward quantitative analysis employing big data and computer vision techniques, while highlighting limitations in geographical coverage and data availability.</p>
+  <div class="post-content">
+    <p>In the first part of my presentation, I will discuss my systematic review examining the relationship between visual data and human perception across 393 scientific papers. Through advanced computational techniques including natural language processing and large language models, I identified significant methodological trends, research gaps, and future directions in this rapidly expanding field. The review reveals an evolution toward quantitative analysis employing big data and computer vision techniques, while highlighting limitations in geographical coverage and data availability.</p>
 
 <p>In the second part, I will introduce ZenSVI, a comprehensive open-source Python package I developed that standardizes and integrates workflows for street view imagery analysis. ZenSVI incorporates five essential components: multi-platform data acquisition, metadata analysis, image transformation capabilities, computer vision integration, and specialized visualization tools. Through a detailed case study of Singapore, I demonstrate how this framework enhances research transparency, methodological reproducibility, and analytical efficiency in urban studies. ZenSVI addresses critical barriers to entry in this domain, enabling researchers across disciplines to conduct sophisticated spatial analyses without extensive programming expertise.</p>
+
+  </div>
+</div>
   </section>
 
   
