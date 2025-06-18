@@ -34,7 +34,7 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
       {% include icon.html icon="fa-solid fa-newspaper" %} Research Updates
     </h3>
     <ul style="list-style-type: none; padding: 0;">
-      {% assign research_posts = site.posts | where_exp: "post", "post.tags contains 'Urban-morphology' or post.tags contains 'digital-twins'" | limit: 5 %}
+      {% assign research_posts = site.posts | where_exp: "post", "post.tags contains 'urban-morphology' or post.tags contains 'conference'" | limit: 5 %}
       {% for post in research_posts %}
         <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
           <a href="{{ post.url | relative_url }}" style="flex-grow: 1; text-decoration: none; color: inherit;">{{ post.title }}</a>

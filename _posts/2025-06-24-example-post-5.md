@@ -1,10 +1,10 @@
 ---
 title: CUPUM 2025 London Conference Report
-# image: images/koichi.jpg
+# image: images/dilixuehui.png
 tags: 
+    - urban-morphology
     - CUPUM
     - Conference
-    - London
 ---
 
 ## Team Report: CUPUM 2025 Conference in London
