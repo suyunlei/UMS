@@ -13,12 +13,6 @@ Main research directions include:
 - AI for Urban Evaluation & Redevelopment
 
 {% include section.html %}
-<!-- 
-## Highlighted
-
-{% include citation.html lookup="Humans As Sensors in Urban Digital Twins" style="rich" %}
-
-{% include section.html %} -->
 
 ## All
 

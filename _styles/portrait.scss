@@ -5,6 +5,11 @@
   display: contents;
 }
 
+/* 在news页面隐藏portrait-wrapper */
+.news-portrait-wrapper {
+  display: none !important;
+}
+
 .portrait {
   position: relative;
   display: inline-flex;

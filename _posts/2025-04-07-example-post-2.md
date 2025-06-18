@@ -1,7 +1,6 @@
 ---
 title: Decarbonising the City webinar
-image: images/koichi.png
-author: Koichi-ito
+image: images/koichi.jpg
 tags: 
     - webinar
 ---

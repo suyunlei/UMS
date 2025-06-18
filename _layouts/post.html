@@ -2,26 +2,32 @@
 layout: default
 ---
 
-{% if page.image %}
-  {% include section.html background=page.image %}
-{% else %}
-  {% include section.html %}
-{% endif %}
-
-<h1 class="center">{{ page.title }}</h1>
-
-{%
-  include post-info.html
-  author=page.author
-  member=page.member
-  published=page.date
-  updated=page.last_modified_at
-  tags=page.tags
-%}
-
+<!-- 移除原来的带背景图片的section -->
 {% include section.html %}
 
-{{ content }}
+<div class="post-container">
+  <!-- 添加文章特色图片 -->
+  {% if page.image %}
+    <div class="post-featured-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  {%
+    include post-info.html
+    author=page.author
+    member=page.member
+    published=page.date
+    updated=page.last_modified_at
+    tags=page.tags
+  %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>
 
 {% include section.html %}
 
