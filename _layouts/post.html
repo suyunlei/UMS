@@ -2,7 +2,11 @@
 layout: default
 ---
 
-{% include section.html background=page.image %}
+{% if page.image %}
+  {% include section.html background=page.image %}
+{% else %}
+  {% include section.html %}
+{% endif %}
 
 <h1 class="center">{{ page.title }}</h1>
 
