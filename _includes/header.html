@@ -9,7 +9,11 @@
 
 <header
   class="background"
-  style="--image: url('{{ '/images/background.gif' | relative_url | uri_escape }}')"
+  {% if page.url == "/" %}
+    style="--image: url('{{ '/images/background.gif' | relative_url | uri_escape }}')"
+  {% else %}
+    style="--image: url('{{ '/images/background-clear.jpg' | relative_url | uri_escape }}')"
+  {% endif %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
@@ -20,7 +24,7 @@
 >
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
-      <span class="logo" style="display: none;">
+      <span class="logo" {% if page.url == "/" %}style="display: none;"{% endif %}>
         {% if svg %}
           {{ svg | file_read }}
         {% else %}
