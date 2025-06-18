@@ -2,7 +2,8 @@
 title: Decarbonising the City webinar
 image: images/koichi.png
 author: Koichi-ito
-tags: webinar
+tags: 
+    - webinar
 ---
 
 In the first part of my presentation, I will discuss my systematic review examining the relationship between visual data and human perception across 393 scientific papers. Through advanced computational techniques including natural language processing and large language models, I identified significant methodological trends, research gaps, and future directions in this rapidly expanding field. The review reveals an evolution toward quantitative analysis employing big data and computer vision techniques, while highlighting limitations in geographical coverage and data availability.

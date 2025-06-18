@@ -52,7 +52,7 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
       {% include icon.html icon="fa-solid fa-bullhorn" %} Announcements
     </h3>
     <ul style="list-style-type: none; padding: 0;">
-      {% assign announcement_posts = site.posts | where_exp: "post", "post.tags contains 'artificial-intelligence'" | limit: 5 %}
+      {% assign announcement_posts = site.posts | where_exp: "post", "post.tags contains 'webinar'" | limit: 5 %}
       {% for post in announcement_posts %}
         <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
           <a href="{{ post.url | relative_url }}" style="flex-grow: 1; text-decoration: none; color: inherit;">{{ post.title }}</a>
