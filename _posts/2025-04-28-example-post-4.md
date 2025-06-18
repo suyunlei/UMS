@@ -1,7 +1,6 @@
 ---
 title: Leveraging 3D Printing and Graph Neural Networks for Low-Carbon Construction
-author: Dr. Wang Hanmo
-image: images/hanmo.png
+image: images/hanmo.jpg
 tags: 
     - webinar
 ---

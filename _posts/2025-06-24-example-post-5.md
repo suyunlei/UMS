@@ -2,6 +2,7 @@
 title: CUPUM 2025 London Conference Report
 # image: images/dilixuehui.png
 tags: 
+    - research
     - urban-morphology
     - CUPUM
     - Conference
