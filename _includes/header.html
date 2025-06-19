@@ -12,15 +12,14 @@
   class="background"
   {% if page.url == "/" %}
     style="--image: url('{{ '/images/background.gif' | relative_url | uri_escape }}')"
+    data-home-background
+    data-not-sticky
+    data-home-layout
   {% else %}
     style="--image: url('{{ '/images/background-clear.jpg' | relative_url | uri_escape }}')"
   {% endif %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
-  {% endif %}
-  {% if page.url == "/" %}
-    data-home-background
-    data-not-sticky
   {% endif %}
 >
   <a href="{{ "/" | relative_url }}" class="home">

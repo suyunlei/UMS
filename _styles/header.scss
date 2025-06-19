@@ -123,7 +123,32 @@ nav > a:hover {
   color: #0795d9;
 }
 
-header:not([data-big]):not([data-home-background]) {
+// 首页特殊布局 - logo居中，nav居中在logo下方
+header[data-home-layout] {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: $big-padding 20px;
+
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    height: $logo-big;
+  }
+
+  nav {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+// 普通页面的响应式导航
+header:not([data-home-layout]) {
   @media (max-width: $collapse) {
     justify-content: flex-end;
 
@@ -143,40 +168,14 @@ header:not([data-big]):not([data-home-background]) {
   }
 }
 
-// 首页背景样式 - 只影响背景和高度，不影响导航布局
+// 首页背景样式
 header[data-home-background] {
-  min-height: 250px; // 设置首页较大但比原来小的高度
-  
-  // 移除了影响导航位置的样式
-  // justify-content: center;
-  // align-items: center;
-  // flex-direction: column;
-  
+  min-height: 250px;
   padding-top: 20px;
   padding-bottom: $big-padding;
-  
-  // 不再需要重置这些元素的布局
-  /*
-  .home {
-    flex-direction: column;
-    flex-grow: 0;
-  }
-  
-  .title-text {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  */
 }
 
 // 保留这部分原样，控制首页上不使用sticky效果
 header[data-not-sticky] {
   position: relative !important;
-}
-
-// 更新background.scss对应的部分也需要修改
-header.background[data-home-background]:before {
-  min-height: 250px;
-  padding-bottom: 15%;
 }
