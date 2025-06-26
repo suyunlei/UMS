@@ -25,7 +25,7 @@
   <a href="{{ "/" | relative_url }}" class="home">
     {% if page.url == "/" and logo_index %}
       <span class="logo">
-        <img src="{{ '/images/logo-index.png' | relative_url | uri_escape }}" alt="home logo" style="width: 150%;height: 150%;">
+        <img src="{{ '/images/logo-index.png' | relative_url | uri_escape }}" alt="home logo" style="width: 150%;height: 150%;margin-top: 50px;">
       </span>
     {% elsif logo %}
       <span class="logo" {% if page.url == "/" %}style="display: none;"{% endif %}>
