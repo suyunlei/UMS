@@ -74,9 +74,9 @@ $wrap: 800px;
   }
 
   .post-excerpt-image {
-    width: 100%;
-    height: auto;
+    width: 315px;
+    height:445px; // 限定尺寸-7.1
     min-height: $thumb-height; // 确保在小屏幕上也有最小高度
-    max-height: 250px; // 限制最大高度
+    // max-height: 250px; // 限制最大高度
   }
 }

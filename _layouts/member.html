@@ -18,6 +18,10 @@ layout: default
 
 {% include float.html content=floatcontent %}
 
+{% if page.ename %}
+<h2 style="text-align: center; margin-top: -15px; color: #666; font-size: 1.5rem; font-weight: normal;">{{ page.ename }}</h2>
+{% endif %}
+
 {{ content }}
 
 <!-- Education Background & Research Interest section -->

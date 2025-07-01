@@ -1,6 +1,7 @@
 ---
 name: 杨国升
 image: images/guosheng.jpg
+ename: Guosheng Yang
 role: Mphil Student
 description: Mphil Student
 group: mphil

@@ -1,5 +1,6 @@
 ---
 name: 杜家旺
+ename: Jiawang Du
 image: images/jiawang.png
 role: Research Assistant
 description: Research Assistant

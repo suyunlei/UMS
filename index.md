@@ -9,22 +9,32 @@
 
 ## Our Mission
 
+---
+
 We are committed to identifying and addressing issues in urban spaces such as poor spatial experiences, lack of equity, and inefficient resource allocation. Guided by the principle of human-centered design, we employ quantitative methods to explore and evaluate strategies for urban renewal, with the goal of enhancing the experiences and overall quality of life for city residents.
 
 UMS advocates for inclusive participation and collaborative innovation. We engage with a wide range of stakeholders—including urban residents, policymakers, planning and design professionals, and developers—to understand diverse perspectives and reshape urban environments that are more equitable, livable, resilient, and sustainable.
 
-{%
-  include button.html
-  text="Meet Our Team"
-  link="team"
-  icon="fa-solid fa-users"
-%}
-{%
-  include button.html
-  text="Our Research"
-  link="research"
-  icon="fa-solid fa-microscope"
-%}
+<div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+  <div style="width: 165px;">
+    {%
+      include button.html
+      text="Meet Our Team"
+      link="team"
+      icon="fa-solid fa-users"
+      style="width: 100%; text-align: center;"
+    %}
+  </div>
+  <div style="width: 165px;">
+    {%
+      include button.html
+      text="Our Research"
+      link="research"
+      icon="fa-solid fa-microscope"
+      style="width: 100%; text-align: center;"
+    %}
+  </div>
+</div>
 
 {% include section.html %} 
 
@@ -34,11 +44,11 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
       {% include icon.html icon="fa-solid fa-newspaper" %} Research Updates
     </h3>
     <ul style="list-style-type: none; padding: 0;">
-      {% assign research_posts = site.posts | where_exp: "post", "post.tags contains 'urban-morphology' or post.tags contains 'conference'" | limit: 5 %}
+      {% assign research_posts = site.posts | where_exp: "post", "post.tags contains 'research' or post.tags contains 'urban-morphology' or post.tags contains 'conference'" | limit: 5 %}
       {% for post in research_posts %}
-        <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
-          <a href="{{ post.url | relative_url }}" style="flex-grow: 1; text-decoration: none; color: inherit;">{{ post.title }}</a>
-          <span style="color: #666; font-size: 0.9em; white-space: nowrap;">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <li style="margin-bottom: 15px;">
+          <span style="color: #666; font-size: 0.9em; margin-right: 10px;">{{ post.date | date: "%Y-%m-%d" }}:</span>
+          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
         </li>
       {% endfor %}
     </ul>
@@ -54,9 +64,9 @@ UMS advocates for inclusive participation and collaborative innovation. We engag
     <ul style="list-style-type: none; padding: 0;">
       {% assign announcement_posts = site.posts | where_exp: "post", "post.tags contains 'webinar'" | limit: 5 %}
       {% for post in announcement_posts %}
-        <li style="margin-bottom: 15px; display: flex; justify-content: space-between;">
-          <a href="{{ post.url | relative_url }}" style="flex-grow: 1; text-decoration: none; color: inherit;">{{ post.title }}</a>
-          <span style="color: #666; font-size: 0.9em; white-space: nowrap;">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <li style="margin-bottom: 15px;">
+          <span style="color: #666; font-size: 0.9em; margin-right: 10px;">{{ post.date | date: "%Y-%m-%d" }}:</span>
+          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">{{ post.title }}</a>
         </li>
       {% endfor %}
     </ul>

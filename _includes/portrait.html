@@ -35,6 +35,12 @@
         {{ member.name }}
       </span>
     {% endif %}
+    
+    {% if member.ename %}
+      <span class="portrait-ename" style="font-size: 0.85em; opacity: 0.9; display: block; margin-top: -5px;">
+        {{ member.ename }}
+      </span>
+    {% endif %}
 
     {% if member.description or type %}
       <span class="portrait-description">

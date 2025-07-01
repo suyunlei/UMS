@@ -1,5 +1,6 @@
 ---
 name: 刘启明
+ename: Qiming Liu
 image: images/qiming.jpg
 role: Research Assistant
 description: Research Assistant
