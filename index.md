@@ -3,7 +3,7 @@
 
 # Urban Morphology Studio
 
-[Urban Morphology Studio](https://suyunlei.github.io/UMS/) focuses on urban morphology as its core framework, integrating cutting-edge quantitative methods such as big data analytics, geographic information science (GIS), and artificial intelligence (AI). By adopting a multidisciplinary perspective that spans social, economic, geographic, ecological, and environmental dimensions, the studio conducts comprehensive research on urban space. We are committed to observing, understanding, and enhancing both the built and lived environments to foster more equitable, livable, and sustainable urban spaces.
+[Urban Morphology Studio (UMS)](https://suyunlei.github.io/UMS/), based at the Hong Kong University of Science and Technology (Guangzhou), is dedicated to advancing urban spatial research through a multidisciplinary lens. Leveraging cutting-edge quantitative methods—including big data analytics, geographic information science (GIS), and artificial intelligence (AI)—our studio explores the social, economic, geographic, ecological, and environmental dimensions of urban form and function.
 
 <hr>
 
@@ -11,9 +11,16 @@
 
 ---
 
-We are committed to identifying and addressing issues in urban spaces such as poor spatial experiences, lack of equity, and inefficient resource allocation. Guided by the principle of human-centered design, we employ quantitative methods to explore and evaluate strategies for urban renewal, with the goal of enhancing the experiences and overall quality of life for city residents.
+We aim to identify and address critical challenges in urban spaces, such as inequitable access, inefficient resource allocation, and poor spatial experiences. Guided by principles of human-centered and sustainable design, we develop evidence-based strategies for urban renewal and quality of life improvement.
 
-UMS advocates for inclusive participation and collaborative innovation. We engage with a wide range of stakeholders—including urban residents, policymakers, planning and design professionals, and developers—to understand diverse perspectives and reshape urban environments that are more equitable, livable, resilient, and sustainable.
+## Our Research
+
+---
+
+Our research encompasses quantitative urban morphology, spatial analysis of cities, public space evaluation, and the development of novel digital tools for urban governance and design. We place strong emphasis on interdisciplinary approaches and open data, enabling robust, actionable insights for practitioners and communities alike.
+UMS values inclusivity, collaboration, and innovation. We actively engage with residents, policymakers, planning professionals, and developers to co-create urban environments that are equitable, livable, and resilient.
+We invite you to explore our latest research outputs and meet the team behind UMS.
+
 
 <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
   <div style="width: 165px;">
