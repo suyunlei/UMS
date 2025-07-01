@@ -14,6 +14,14 @@ layout: default
   {% endfor %}
 </div>
 
+<style>
+  /* 为团队成员页面的按钮添加左右内边距 */
+  .button[data-style="bare"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+</style>
+
 {% endcapture %}
 
 {% include float.html content=floatcontent %}

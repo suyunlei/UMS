@@ -23,7 +23,7 @@ We invite you to explore our latest research outputs and meet the team behind UM
 
 
 <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
-  <div style="width: 165px;">
+  <div style="width: 180px;">
     {%
       include button.html
       text="Meet Our Team"
@@ -32,7 +32,7 @@ We invite you to explore our latest research outputs and meet the team behind UM
       style="width: 100%; text-align: center;"
     %}
   </div>
-  <div style="width: 165px;">
+  <div style="width: 180px;">
     {%
       include button.html
       text="Our Research"

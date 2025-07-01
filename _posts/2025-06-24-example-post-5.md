@@ -8,8 +8,6 @@ tags:
     - Conference
 ---
 
-## Team Report: CUPUM 2025 Conference in London
-
 The recent CUPUM conference was an incredibly rewarding experience for the research team from HKUST (Guangzhou), marking their first collective participation at this prestigious international forum. Among the highlights was Minwei Zhao, a PhD student under the supervision of Dr. Cai Wu at the Urban Morphology Studio, who was awarded the Best Early Career Paper Award—a delightful and unexpected recognition of her outstanding research contributions.
 
 The team’s presence was marked by several impactful presentations and workshops across the four-day event. On Day 1, Dr. Mingshu Wang, Dr. Ziqi Li, and Dr. Cai Wu co-organized a well-received workshop exploring cutting-edge applications of AI and Machine Learning in urban planning, sparking insightful discussions and laying the groundwork for future collaborations.
