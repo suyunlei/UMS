@@ -22,7 +22,7 @@ h1 {
 h2 {
   font-size: 1.6rem;
   padding-bottom: 5px;
-  border-bottom: solid 1px var(--light-gray);
+  border-bottom: solid 1px #e0e0e0;
   font-weight: var(--regular);
 }
 

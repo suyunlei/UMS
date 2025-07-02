@@ -121,17 +121,17 @@ header[data-home-layout] .home {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 header[data-home-layout] .logo {
   height: 80px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 header[data-home-layout] nav {
   justify-content: center;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 @media (max-width: 700px) {
