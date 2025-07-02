@@ -12,8 +12,8 @@
 }
 
 .post-excerpt-image {
-  width: 315px;
-  height: 445px;
+  width: 315px !important;
+  height: 445px !important;
   flex-shrink: 0;
   width: 200px;
   height: 100px;
