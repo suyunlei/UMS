@@ -18,7 +18,9 @@ We aim to identify and address critical challenges in urban spaces, such as ineq
 <hr style="width: 15%; margin: 20px auto;">
 
 Our research encompasses quantitative urban morphology, spatial analysis of cities, public space evaluation, and the development of novel digital tools for urban governance and design. We place strong emphasis on interdisciplinary approaches and open data, enabling robust, actionable insights for practitioners and communities alike.
+
 UMS values inclusivity, collaboration, and innovation. We actively engage with residents, policymakers, planning professionals, and developers to co-create urban environments that are equitable, livable, and resilient.
+
 We invite you to explore our latest research outputs and meet the team behind UMS.
 
 

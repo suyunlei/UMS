@@ -1,6 +1,6 @@
 ---
-name: 吴偲
-ename: Cai Wu
+name: Cai Wu
+ename: 吴偲
 image: images/wucai.png
 role: Leader
 affiliation: Assistant Professor

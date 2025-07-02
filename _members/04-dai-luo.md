@@ -1,6 +1,6 @@
 ---
-name: 张戴洛
-ename: Dailuo Zhang
+name: Dailuo Zhang
+ename: 张戴洛
 image: images/dailuo.png
 description: PhD Student
 role: PhD Student

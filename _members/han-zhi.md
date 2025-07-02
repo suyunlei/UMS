@@ -1,6 +1,6 @@
 ---
-name: 俎含之
-ename: Hanzhi Zu
+name: Hanzhi Zu
+ename: 俎含之
 image: images/hanzhi.png
 role: Mphil Student
 description: Mphil Student

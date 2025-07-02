@@ -1,6 +1,6 @@
 ---
-name: 赵民炜
-ename: Mingwei Zhao
+name: Mingwei Zhao
+ename: 赵民炜
 image: images/mingwei.png
 role: PhD Student
 description: PhD Student

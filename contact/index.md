@@ -74,8 +74,8 @@ Please use the subject line:
 Required application materials include:
 
 *   Curriculum Vitae (CV)
-*   Motivation Letter outlining your academic interests and reasons for applying
-*   Transcripts from your undergraduate and/or master's studies
+*   Motivation Letter outlining your academic interests and reasons for applying (optional)
+*   Transcripts from your undergraduate and/or master's studies (optional)
 *   Preliminary Research Proposal or Portfolio (optional)
 
 We look forward to hearing from you and exploring new opportunities together!
