@@ -6,12 +6,6 @@ layout: default
 {% include section.html %}
 
 <div class="post-container">
-  <!-- 添加文章特色图片 -->
-  {% if page.image %}
-    <div class="post-featured-image">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
-    </div>
-  {% endif %}
 
   <h1 class="post-title">{{ page.title }}</h1>
 
@@ -24,6 +18,13 @@ layout: default
     tags=page.tags
   %}
 
+    <!-- 添加文章特色图片 -->
+  {% if page.image %}
+    <div class="post-featured-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+  
   <div class="post-content">
     {{ content }}
   </div>

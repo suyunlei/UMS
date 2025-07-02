@@ -19,6 +19,8 @@ $wrap: 800px;
 }
 
 .post-excerpt-image {
+  width: 315px;
+  height:445px; // 限定尺寸-7.1
   flex-shrink: 0;
   width: $thumb-size;
   height: $thumb-height;
