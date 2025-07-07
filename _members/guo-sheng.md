@@ -2,11 +2,19 @@
 name: Guosheng Yang
 ename: 杨国升
 image: images/guosheng.jpg
-role: Mphil Student
 description: Mphil Student
+role: Mphil Student
 group: mphil
+education:
+  - BA in Architecture, Zhejiang University 2021
+research_interest:
+  - Urban Analytics
+  - Urban Perception
+  - GIS
 links:
-  github: guosheng
+  home-page: https://gsyang.me/
+  email: gyang559@connect.hkust-gz.edu.cn
+  instagram: Gs.YANG
 ---
 
-杨国升现为香港科技大学（广州）哲学硕士研究生。在获得学士学位后，他从事了三年的建筑工作。他目前的主要研究方向为城市建成环境定量分析。通过了解人类对城市建筑环境的感知，他的研究旨在为城市设计和规划实践提供建议和支撑。在香港科大（广州），他希望将人类感知与计算机视觉结合起来，量化城市建筑环境。 
+Guosheng is currently a Mphil student from UGOD, The Hong Kong University of Science and Technology (Guangzhou). After achieving his bachelor degree, he worked as an architecture for three years. His current research interests are mainly about the quantitative analysis on urban built environment. By understanding the human perception towards urban built environment, his research aims to inform urban design and planning practice. At HKUST(GZ), Guosheng hopes to integrate human perception with computer vision to quantify urban built environment.
