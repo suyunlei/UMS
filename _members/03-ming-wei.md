@@ -1,7 +1,7 @@
 ---
 name: Minwei Zhao
 ename: 赵民炜
-image: images/minwei.png
+image: images/mingwei.png
 description: PhD Student
 role: PhD Student
 group: phd
