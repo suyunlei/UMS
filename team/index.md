@@ -22,3 +22,6 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 <!-- Then RA group -->
 {% include list.html data="members" component="portrait" filter="group == 'RA'" %}
 
+<!-- Then RA group -->
+{% include list.html data="members" component="portrait" filter="group == 'VS'" %}
+
