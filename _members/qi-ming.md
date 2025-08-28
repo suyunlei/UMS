@@ -2,9 +2,9 @@
 name: Qiming Liu
 ename: 刘启明
 image: images/qiming.jpg
-description: PhD Student
-role: Research Assiatant
-group: RA
+description: Visiting Student
+role: Visiting Student
+group: VS
 education:
   - MSc in Architecture, Wuhan University 2023
   - BA in Architecture, Hefei University of Technology 2020
