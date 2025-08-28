@@ -2,9 +2,10 @@
 name: Jiawang Du
 ename: 杜家旺
 image: images/jiawang.png
+description: RA
+group: RA
 role: Research Assistant
 description: Research Assistant
-group: hold
 links:
   github: jiawang
 ---

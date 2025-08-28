@@ -3,8 +3,8 @@ name: Dongzhi Luo
 ename: 罗冬致
 image: images/dongzhi.jpg
 description: RA
-role: RA
-group: ra
+role: Research Assistant
+group: RA
 education:
   - Master's student in Territorial Spatial Planning, Lanzhou University 2025
   - BE in Urban and Rural Planning, Northeastern University 2024
