@@ -3,7 +3,7 @@ name: Jiawang Du
 ename: 杜家旺
 image: images/jiawang.png
 description: RA
-group: RA
+group: ra
 role: Research Assistant
 links:
   github: jiawang
