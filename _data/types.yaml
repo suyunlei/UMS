@@ -4,26 +4,32 @@
 
 principal-investigator:
   icon: fa-solid fa-microscope
-  description: Principal Investigator
+  text: Principal Investigator
+  description: Professor
 
 postdoc:
   icon: fa-solid fa-glasses
+  text: Postdoctoral Researcher
   description: Postdoctoral Researcher
 
 phd:
   icon: fa-solid fa-graduation-cap
+  text: PhD Student
   description: PhD Student
 
 undergrad:
   icon: fa-solid fa-user-graduate
+  text: Undergraduate Student
   description: Undergraduate Student
 
 mphil:
   icon: fa-solid fa-code
+  text: Mphil Student
   description: Mphil Student
 
 RA:
   icon: fa-solid fa-dog
+  text: Research Assistant
   description: Research Assistant
 
 # general

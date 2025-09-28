@@ -10,18 +10,34 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 
 {% include section.html %}
 
-<!-- Display PI (wucai) first -->
+<!-- Display PI first -->
 {% include list.html data="members" component="portrait" filter="group == 'professor'" %}
 
-<!-- Then PhD group -->
+<!-- Then PhD students -->
 {% include list.html data="members" component="portrait" filter="group == 'phd'" %}
 
-<!-- Then MPhil group -->
-{% include list.html data="members" component="portrait" filter="group == 'mphil'" %}
-
-<!-- Then RA group -->
+<!-- Then Research Assistants -->
 {% include list.html data="members" component="portrait" filter="group == 'RA'" %}
 
-<!-- Then RA group -->
-{% include list.html data="members" component="portrait" filter="group == 'VS'" %}
+<!-- Then any other members -->
+{% include list.html data="members" component="portrait" filter="group != 'professor' and group != 'phd' and group != 'RA'" %}
+
+{% include section.html background="images/background.jpg" dark=true %}
+
+## Join Us
+
+### Prospective Doctoral Candidates
+
+We are currently recruiting 1–2 PhD students for Fall 2025 and Spring 2026. We welcome outstanding candidates who are interested in the following research areas:
+
+*   Urban Morphology & Urban Activities
+*   Human-Perceived Urban Space
+*   AI for Urban Evaluation & Redevelopment
+
+{%
+  include button.html
+  icon="fa-solid fa-handshake-angle"
+  text="Learn More"
+  link="contact"
+%}
 
