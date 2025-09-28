@@ -5,7 +5,6 @@ image: images/jiawang.png
 description: RA
 group: RA
 role: Research Assistant
-description: Research Assistant
 links:
   github: jiawang
 ---
