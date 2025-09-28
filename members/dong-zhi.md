@@ -2,6 +2,7 @@
 name: Dongzhi Luo
 ename: 罗冬致
 image: images/dongzhi.jpg
+description: RA
 group: RA
 role: Research Assistant
 description: Research Assistant
