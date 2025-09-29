@@ -10,16 +10,17 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 
 {% include section.html %}
 
-<!-- Display PI first -->
+## Principal Investigator
 {% include list.html data="members" component="portrait" filter="group == 'professor'" %}
 
-<!-- Then PhD students -->
-{% include list.html data="members" component="portrait" filter="group == 'phd'" %}
+{% include section.html %}
 
-<!-- Then Research Assistants -->
-{% include list.html data="members" component="portrait" filter="group == 'ra'" %}
+## PhD Students
+{% include list.html data="members" component="portrait" filter="group == 'phd'" sort="order" %}
 
-<!-- Then any other members -->
-{% include list.html data="members" component="portrait" filter="group != 'professor' and group != 'phd' and group != 'RA'" %}
+{% include section.html %}
+
+## Research Assistants
+{% include list.html data="members" component="portrait" filter="group == 'ra'" sort="order" %}
 
 {% include section.html background="images/background.jpg" dark=true %}
