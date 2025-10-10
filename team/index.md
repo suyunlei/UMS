@@ -28,4 +28,5 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 ## Research Assistants
 {% include list.html data="members" component="portrait" filter="group == 'ra'" sort="order" %}
 
-{% include section.html background="images/background.jpg" dark=true %}
+## Visiting Students
+{% include list.html data="members" component="portrait" filter="group == 'VS'" sort="order" %}
