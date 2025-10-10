@@ -20,6 +20,11 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 
 {% include section.html %}
 
+## Mphil Students
+{% include list.html data="members" component="portrait" filter="group == 'mphil'" sort="order" %}
+
+{% include section.html %}
+
 ## Research Assistants
 {% include list.html data="members" component="portrait" filter="group == 'ra'" sort="order" %}
 
