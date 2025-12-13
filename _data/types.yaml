@@ -22,7 +22,7 @@ mphil:
   icon: fa-solid fa-code
   description: Mphil Student
 
-RA:
+ra:
   icon: fa-solid fa-flask
   text: Research Assistant
   description: Research Assistant
