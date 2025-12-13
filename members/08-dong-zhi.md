@@ -10,7 +10,6 @@ education:
   - "BE in Urban and Rural Planning, Northeastern University 2024"
 research_interest:
   - Spatial analysis
-  - GeoAI
   - Urban morphology
 links:
   email: dongzhil@hkust-gz.edu.cn
