@@ -8,8 +8,8 @@ group: ra
 role: Research Assistant
 order: 2
 education:
-  - "Master's student in Territorial Spatial Planning, Lanzhou University 2025"
-  - "BE in Urban and Rural Planning, Northeastern University 2024"
+  - Master's student in Territorial Spatial Planning, Lanzhou University 2025
+  - BE in Urban and Rural Planning, Northeastern University 2024
 research_interest:
   - Spatial analysis
   - Urban morphology
