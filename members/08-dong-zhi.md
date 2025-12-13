@@ -1,5 +1,4 @@
 ﻿---
-layout: member
 name: Dongzhi Luo
 ename: 罗冬致
 image: images/dongzhi.jpg
