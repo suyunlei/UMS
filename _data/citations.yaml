@@ -1,5 +1,22 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.autcon.2025.106530
+  title: Advancing graph-supported machine learning in generative design for architectural
+    engineering
+  authors:
+  - Hanmo Wang
+  - Zhuyin Lu
+  - Shawn Owyong
+  - Huan Ting Chen
+  - Cai Wu
+  - Tam H. Nguyen
+  - Alexander Lin
+  publisher: Automation in Construction
+  date: '2025-12-01'
+  link: https://doi.org/g9749p
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
 - id: doi:10.1016/j.cities.2025.105854
   title: 'Formalising the urban pattern language: A morphological paradigm towards
     understanding the multi-scalar spatial structure of cities'
