@@ -32,6 +32,11 @@ RA:
   text: Research Assistant
   description: Research Assistant
 
+"Research Assistant":
+  icon: fa-solid fa-flask
+  text: Research Assistant
+  description: Research Assistant
+
 # general
 
 link:
