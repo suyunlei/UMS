@@ -1,0 +1,27 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches: [ main ]  # 或您的默认分支
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'  # 或您的 Jekyll 所需版本
+          bundler-cache: true  # 自动缓存 gems
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
