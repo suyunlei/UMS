@@ -10,25 +10,6 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 
 {% include section.html %}
 
-## Principal Investigator
-{% include list.html data="members" component="portrait" filter="group == 'professor'" %}
-
-{% include section.html %}
-
-## PhD Students
-{% include list.html data="members" component="portrait" filter="group == 'phd'" sort="order" %}
-
-{% include section.html %}
-
-## Mphil Students
-{% include list.html data="members" component="portrait" filter="group == 'mphil'" sort="order" %}
-
-{% include section.html %}
-
-## Research Assistants
-{% include list.html data="members" component="portrait" filter="group == 'ra'" sort="order" %}
-
-{% include section.html %}
-
-## Visiting Students
-{% include list.html data="members" component="portrait" filter="group == 'VS'" sort="order" %}
+<div class="grid" style="--repeat: 5;">
+{% include list.html data="members" component="portrait" %}
+</div>
