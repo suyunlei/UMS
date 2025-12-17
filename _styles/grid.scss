@@ -22,6 +22,10 @@ $one: 500px;
   margin: 0 !important;
 }
 
+.grid-5 {
+  --repeat: 5;
+}
+
 @media (max-width: $two) {
   .grid {
     --repeat: 2;

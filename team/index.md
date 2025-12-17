@@ -10,6 +10,6 @@ Welcome to the Urban Morphology Studio team! Our group brings together diverse b
 
 {% include section.html %}
 
-<div class="grid" style="--repeat: 5;">
+<div class="grid grid-5">
 {% include list.html data="members" component="portrait" %}
 </div>
