@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://suyunlei.github.io/UMS/sitemap.xml
