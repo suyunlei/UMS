@@ -1,1 +1,1 @@
-Sitemap: https://suyunlei.github.io/UMS/sitemap.xml
+Sitemap: https://urbanmorphology.studio/sitemap.xml
