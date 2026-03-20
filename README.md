@@ -5,6 +5,6 @@
 
   # suyunlei's Website
 
-  Visit **[www.urbanmorphology.studio](http://www.urbanmorphology.studio)** 🚀
+  Visit **[urbanmorphology.studio](http://urbanmorphology.studio)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
