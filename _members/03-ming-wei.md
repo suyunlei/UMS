@@ -16,6 +16,7 @@ links:
   home-page: https://www.researchgate.net/profile/Minwei-Zhao
   email: m.zhao@conncet.hkust-gz.edu.cn
   twitter: MinweiZhao_iii
+  orcid: 0000-0002-6380-5426
 ---
 
 Minwei is currently pursuing a PHD’s degree in UGOD at the HKUST(GZ). He has research experience in GeoAI,
