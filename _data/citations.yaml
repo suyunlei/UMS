@@ -66,7 +66,51 @@
   orcid: 0009-0006-8371-7972
   plugin: orcid.py
   file: orcid-yun-lei.yaml
-- id: doi:10.1016/j.autcon.2025.106530
+- id: doi:10.1016/j.cities.2026.107227
+  title: 'Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view
+    imagery and what it reveals about perception'
+  authors:
+  - Guosheng Yang
+  - Yunlei Su
+  - Minwei Zhao
+  - Chaosu Li
+  - Cai Wu
+  publisher: Cities
+  date: '2026-08-01'
+  link: https://doi.org/hb5gqm
+  orcid: 0009-0003-9376-3073
+  plugin: orcid.py
+  file: orcid-guo-sheng.yaml
+- id: doi:10.1016/j.scs.2026.107534
+  title: 'Understanding Multi-perspective Urban Green Space Patterns under Urban Expansion:
+    Evidence from Guangzhou'
+  authors:
+  - Qiming Liu
+  - Shaoqing Dai
+  - Guosheng Yang
+  - Cai Wu
+  publisher: Sustainable Cities and Society
+  date: '2026-05-01'
+  link: https://doi.org/hb5gqn
+  orcid: 0009-0003-9376-3073
+  plugin: orcid.py
+  file: orcid-guo-sheng.yaml
+- id: doi:10.1177/23998083241267070
+  title: "\u2018Local Hubs and Global Gateways\u2019: Understanding the impact of\
+    \ Singapore\u2019s master plan on urban polycentricity"
+  authors:
+  - Cai Wu
+  - Mingshu Wang
+  - Jiong Wang
+  - Duncan Smith
+  - Menno-Jan Kraak
+  publisher: 'Environment and Planning B: Urban Analytics and City Science'
+  date: '2024-08-09'
+  link: https://doi.org/g9mnv5
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.1016/J.AUTCON.2025.106530
   title: Advancing graph-supported machine learning in generative design for architectural
     engineering
   authors:
@@ -83,7 +127,7 @@
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
-- id: doi:10.1016/j.cities.2025.105854
+- id: doi:10.1016/J.CITIES.2025.105854
   title: 'Formalising the urban pattern language: A morphological paradigm towards
     understanding the multi-scalar spatial structure of cities'
   authors:
@@ -95,21 +139,6 @@
   publisher: Cities
   date: '2025-06-01'
   link: https://doi.org/g9fp47
-  orcid: 0000-0002-5578-5525
-  plugin: orcid.py
-  file: orcid-wu-cai.yaml
-- id: doi:10.1177/23998083241267070
-  title: "\u2018Local Hubs and Global Gateways\u2019: Understanding the impact of\
-    \ Singapore\u2019s master plan on urban polycentricity"
-  authors:
-  - Cai Wu
-  - Mingshu Wang
-  - Jiong Wang
-  - Duncan Smith
-  - Menno-Jan Kraak
-  publisher: 'Environment and Planning B: Urban Analytics and City Science'
-  date: '2024-08-09'
-  link: https://doi.org/g9mnv5
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
@@ -127,7 +156,7 @@
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
-- id: doi:10.3390/ijgi13040114
+- id: doi:10.3390/IJGI13040114
   title: Mapping Street Patterns with Network Science and Supervised Machine Learning
   authors:
   - Cai Wu
