@@ -1,5 +1,78 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.scs.2026.107534
+  title: 'Understanding Multi-perspective Urban Green Space Patterns under Urban Expansion:
+    Evidence from Guangzhou'
+  authors:
+  - Qiming Liu
+  - Shaoqing Dai
+  - Guosheng Yang
+  - Cai Wu
+  publisher: Sustainable Cities and Society
+  date: '2026-05-01'
+  link: https://doi.org/hb5gqn
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.1016/j.cities.2026.107227
+  title: 'Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view
+    imagery and what it reveals about perception'
+  authors:
+  - Guosheng Yang
+  - Yunlei Su
+  - Minwei Zhao
+  - Chaosu Li
+  - Cai Wu
+  publisher: Cities
+  date: '2026-08-01'
+  link: https://doi.org/hb5gqm
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.1016/j.scs.2025.106267
+  title: Perceiving the fine-scale urban poverty using street view images through
+    a vision-language model
+  authors:
+  - Chao Wu
+  - Yongxiang Liang
+  - Minwei Zhao
+  - Mingda Teng
+  - Han Yue
+  - Yu Ye
+  publisher: Sustainable Cities and Society
+  date: '2025-04-01'
+  link: https://doi.org/hbftp2
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.48550/ARXIV.2504.04739
+  title: 'MedGNN: Capturing the Links Between Urban Characteristics and Medical Prescriptions'
+  authors:
+  - Minwei Zhao
+  - Sanja Scepanovic
+  - Stephen Law
+  - Ivica Obadic
+  - Cai Wu
+  - Daniele Quercia
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/hbftp3
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.1177/23998083221108191
+  title: 'Measuring urban nighttime vitality and its relationship with urban spatial
+    structure: A data-driven approach'
+  authors:
+  - Chao Wu
+  - Minwei Zhao
+  - Yu Ye
+  publisher: 'Environment and Planning B: Urban Analytics and City Science'
+  date: '2022-06-14'
+  link: https://doi.org/hbftp4
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
 - id: doi:10.1007/978-981-95-3102-8_1
   title: "BuildingView: Constructing Urban Building Exteriors Databases with\_Street\
     \ View Imagery and\_Multimodal Large Language Model"
@@ -66,35 +139,6 @@
   orcid: 0009-0006-8371-7972
   plugin: orcid.py
   file: orcid-yun-lei.yaml
-- id: doi:10.1016/j.cities.2026.107227
-  title: 'Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view
-    imagery and what it reveals about perception'
-  authors:
-  - Guosheng Yang
-  - Yunlei Su
-  - Minwei Zhao
-  - Chaosu Li
-  - Cai Wu
-  publisher: Cities
-  date: '2026-08-01'
-  link: https://doi.org/hb5gqm
-  orcid: 0009-0003-9376-3073
-  plugin: orcid.py
-  file: orcid-guo-sheng.yaml
-- id: doi:10.1016/j.scs.2026.107534
-  title: 'Understanding Multi-perspective Urban Green Space Patterns under Urban Expansion:
-    Evidence from Guangzhou'
-  authors:
-  - Qiming Liu
-  - Shaoqing Dai
-  - Guosheng Yang
-  - Cai Wu
-  publisher: Sustainable Cities and Society
-  date: '2026-05-01'
-  link: https://doi.org/hb5gqn
-  orcid: 0009-0003-9376-3073
-  plugin: orcid.py
-  file: orcid-guo-sheng.yaml
 - id: doi:10.1177/23998083241267070
   title: "\u2018Local Hubs and Global Gateways\u2019: Understanding the impact of\
     \ Singapore\u2019s master plan on urban polycentricity"
@@ -198,50 +242,6 @@
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
-- id: doi:10.1016/j.scs.2025.106267
-  title: Perceiving the fine-scale urban poverty using street view images through
-    a vision-language model
-  authors:
-  - Chao Wu
-  - Yongxiang Liang
-  - Minwei Zhao
-  - Mingda Teng
-  - Han Yue
-  - Yu Ye
-  publisher: Sustainable Cities and Society
-  date: '2025-04-01'
-  link: https://doi.org/hbftp2
-  orcid: 0000-0002-6380-5426
-  plugin: orcid.py
-  file: orcid-min-wei.yaml
-- id: doi:10.48550/ARXIV.2504.04739
-  title: 'MedGNN: Capturing the Links Between Urban Characteristics and Medical Prescriptions'
-  authors:
-  - Minwei Zhao
-  - Sanja Scepanovic
-  - Stephen Law
-  - Ivica Obadic
-  - Cai Wu
-  - Daniele Quercia
-  publisher: arXiv
-  date: '2025-01-01'
-  link: https://doi.org/hbftp3
-  orcid: 0000-0002-6380-5426
-  plugin: orcid.py
-  file: orcid-min-wei.yaml
-- id: doi:10.1177/23998083221108191
-  title: 'Measuring urban nighttime vitality and its relationship with urban spatial
-    structure: A data-driven approach'
-  authors:
-  - Chao Wu
-  - Minwei Zhao
-  - Yu Ye
-  publisher: 'Environment and Planning B: Urban Analytics and City Science'
-  date: '2022-06-14'
-  link: https://doi.org/hbftp4
-  orcid: 0000-0002-6380-5426
-  plugin: orcid.py
-  file: orcid-min-wei.yaml
 - id: 10.1007/978-3-031-43699-4_42
   title: Humans As Sensors in Urban Digital Twins
   authors:
