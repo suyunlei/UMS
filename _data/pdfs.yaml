@@ -5,3 +5,17 @@
   id: doi:10.1016/j.jag.2026.105484
   link: https://doi.org/10.1016/j.jag.2026.105484
   file: pdfs/su-et-al-2026-beyond-fidelity.pdf
+
+- title: "UST-GNN: A Unified Spatial-Topological Graph Neural Network Framework for Urban Analytics Demonstrated Through a Case Study on Urban Health Prediction"
+  ids:
+    - doi:10.1016/j.compenvurbsys.2026.102466
+  id: doi:10.1016/j.compenvurbsys.2026.102466
+  link: https://doi.org/10.1016/j.compenvurbsys.2026.102466
+  file: pdfs/zhao-et-al-2026-ust-gnn.pdf
+
+- title: "Theory-Informed and Interpretable Graph Learning for Urban Commuting Flows"
+  ids:
+    - doi:10.1016/j.scs.2026.107575
+  id: doi:10.1016/j.scs.2026.107575
+  link: https://doi.org/10.1016/j.scs.2026.107575
+  file: pdfs/zhao-et-al-2026-pig-gnn-commuting-flows.pdf
