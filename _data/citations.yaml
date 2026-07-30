@@ -1,5 +1,18 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.scs.2026.107575
+  title: Theory-informed and interpretable graph learning for urban commuting flows
+  authors:
+  - Minwei Zhao
+  - Dailuo Zhang
+  - Zhecheng Shi
+  - Cai Wu
+  publisher: Sustainable Cities and Society
+  date: '2026-09-01'
+  link: https://doi.org/hcc4pj
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
 - id: doi:10.1016/j.scs.2026.107534
   title: 'Understanding Multi-perspective Urban Green Space Patterns under Urban Expansion:
     Evidence from Guangzhou'
@@ -11,9 +24,23 @@
   publisher: Sustainable Cities and Society
   date: '2026-05-01'
   link: https://doi.org/hb5gqn
-  orcid: 0000-0002-5578-5525
+  orcid: 0009-0003-9376-3073
   plugin: orcid.py
-  file: orcid-wu-cai.yaml
+  file: orcid-guo-sheng.yaml
+- id: doi:10.1016/j.jag.2026.105484
+  title: 'Beyond fidelity: Rethinking realism through human behavior in VR city modeling
+    LOD design'
+  authors:
+  - Yunlei Su
+  - Guosheng Yang
+  - Wufan Zhao
+  - Cai Wu
+  publisher: International Journal of Applied Earth Observation and Geoinformation
+  date: '2026-08-01'
+  link: https://doi.org/hcc4pk
+  orcid: 0009-0006-8371-7972
+  plugin: orcid.py
+  file: orcid-yun-lei.yaml
 - id: doi:10.1016/j.cities.2026.107227
   title: 'Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view
     imagery and what it reveals about perception'
@@ -26,119 +53,41 @@
   publisher: Cities
   date: '2026-08-01'
   link: https://doi.org/hb5gqm
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.48550/arXiv.2507.03570
+  title: 'From Street Form to Spatial Justice: Explaining Urban Exercise Inequality
+    via a Triadic SHAP-Informed Framework'
+  authors:
+  - Minwei Zhao
+  - Guosheng Yang
+  - Zhuoni Zhang
+  - Filip Biljecki
+  - Hanzhi Zu
+  - Cai Wu
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/hcc4pm
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
-- id: doi:10.1016/j.scs.2025.106267
-  title: Perceiving the fine-scale urban poverty using street view images through
-    a vision-language model
-  authors:
-  - Chao Wu
-  - Yongxiang Liang
-  - Minwei Zhao
-  - Mingda Teng
-  - Han Yue
-  - Yu Ye
-  publisher: Sustainable Cities and Society
-  date: '2025-04-01'
-  link: https://doi.org/hbftp2
-  orcid: 0000-0002-6380-5426
-  plugin: orcid.py
-  file: orcid-min-wei.yaml
-- id: doi:10.48550/ARXIV.2504.04739
-  title: 'MedGNN: Capturing the Links Between Urban Characteristics and Medical Prescriptions'
+- id: doi:10.1016/j.compenvurbsys.2026.102466
+  title: "UST-GNN: A unified spatial\u2013topological graph neural network framework\
+    \ for urban analytics demonstrated through a case study on urban health prediction"
   authors:
   - Minwei Zhao
-  - Sanja Scepanovic
+  - "Sanja \u0160\u0107epanovi\u0107"
   - Stephen Law
-  - Ivica Obadic
+  - "Ivica Obadi\u0107"
   - Cai Wu
   - Daniele Quercia
-  publisher: arXiv
-  date: '2025-01-01'
-  link: https://doi.org/hbftp3
-  orcid: 0000-0002-6380-5426
+  publisher: Computers, Environment and Urban Systems
+  date: '2026-10-01'
+  link: https://doi.org/hcc4pn
+  orcid: 0000-0002-5578-5525
   plugin: orcid.py
-  file: orcid-min-wei.yaml
-- id: doi:10.1177/23998083221108191
-  title: 'Measuring urban nighttime vitality and its relationship with urban spatial
-    structure: A data-driven approach'
-  authors:
-  - Chao Wu
-  - Minwei Zhao
-  - Yu Ye
-  publisher: 'Environment and Planning B: Urban Analytics and City Science'
-  date: '2022-06-14'
-  link: https://doi.org/hbftp4
-  orcid: 0000-0002-6380-5426
-  plugin: orcid.py
-  file: orcid-min-wei.yaml
-- id: doi:10.1007/978-981-95-3102-8_1
-  title: "BuildingView: Constructing Urban Building Exteriors Databases with\_Street\
-    \ View Imagery and\_Multimodal Large Language Model"
-  authors:
-  - Zongrong Li
-  - Yunlei Su
-  - Hongrong Wang
-  - Wufan Zhao
-  publisher: Lecture Notes in Computer Science
-  date: '2025-11-12'
-  link: https://doi.org/hbbm72
-  orcid: 0009-0006-8371-7972
-  plugin: orcid.py
-  file: orcid-yun-lei.yaml
-- id: doi:10.2139/ssrn.5463468
-  title: 'Beyond Fidelity: Rethinking Realism Through Human Behavior in VR City Modeling
-    LOD Design'
-  authors:
-  - YUNLEI SU
-  - Guosheng Yang
-  - Wufan Zhao
-  - Cai Wu
-  publisher: Elsevier BV
-  date: '2025-01-01'
-  link: https://doi.org/hbf796
-  orcid: 0009-0006-8371-7972
-  plugin: orcid.py
-  file: orcid-yun-lei.yaml
-- id: doi:10.2139/ssrn.5336448
-  title: 'Buildingmultiview: Extracting 11 Multi-Scale Building Characteristics from
-    Satellite and Street View Imagery with Large Language Models'
-  authors:
-  - Zongrong Li
-  - Yunlei Su
-  - Filip Biljecki
-  - Wufan Zhao
-  publisher: Elsevier BV
-  date: '2025-01-01'
-  link: https://doi.org/hbf797
-  orcid: 0009-0006-8371-7972
-  plugin: orcid.py
-  file: orcid-yun-lei.yaml
-- id: doi:10.17605/OSF.IO/ABYQH
-  title: CUPUM 2025
-  authors:
-  - Susannah Cramer-Greenbaum
-  - Chen Zhong
-  - Adam Dennett
-  publisher: OSF
-  date: '2025-01-01'
-  link: https://doi.org/g9z5x8
-  orcid: 0009-0006-8371-7972
-  plugin: orcid.py
-  file: orcid-yun-lei.yaml
-- id: doi:10.1007/978-3-031-43699-4_42
-  title: Humans As Sensors in Urban Digital Twins
-  authors:
-  - Binyu Lei
-  - Yunlei Su
-  - Filip Biljecki
-  publisher: Lecture Notes in Geoinformation and Cartography
-  date: '2024-01-01'
-  link: https://doi.org/g9mntk
-  orcid: 0009-0006-8371-7972
-  plugin: orcid.py
-  file: orcid-yun-lei.yaml
+  file: orcid-wu-cai.yaml
 - id: doi:10.1177/23998083241267070
   title: "\u2018Local Hubs and Global Gateways\u2019: Understanding the impact of\
     \ Singapore\u2019s master plan on urban polycentricity"
@@ -171,6 +120,20 @@
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
+- id: doi:10.2139/ssrn.5463468
+  title: 'Beyond Fidelity: Rethinking Realism Through Human Behavior in VR City Modeling
+    LOD Design'
+  authors:
+  - YUNLEI SU
+  - Guosheng Yang
+  - Wufan Zhao
+  - Cai Wu
+  publisher: Elsevier BV
+  date: '2025-01-01'
+  link: https://doi.org/hbf796
+  orcid: 0009-0006-8371-7972
+  plugin: orcid.py
+  file: orcid-yun-lei.yaml
 - id: doi:10.1016/J.CITIES.2025.105854
   title: 'Formalising the urban pattern language: A morphological paradigm towards
     understanding the multi-scalar spatial structure of cities'
@@ -183,6 +146,36 @@
   publisher: Cities
   date: '2025-06-01'
   link: https://doi.org/g9fp47
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.48550/arXiv.2504.04739
+  title: 'UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for
+    Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction'
+  authors:
+  - Minwei Zhao
+  - Sanja Scepanovic
+  - Stephen Law
+  - Ivica Obadic
+  - Cai Wu
+  - Daniele Quercia
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/hbftp3
+  orcid: 0000-0002-5578-5525
+  plugin: orcid.py
+  file: orcid-wu-cai.yaml
+- id: doi:10.2139/ssrn.5546713
+  title: 'The Transformation of Green Spaces Under Urban Expansion: A Study on the
+    Coordination of Urban Expansion and Green Spaces in Guangzhou'
+  authors:
+  - Qiming Liu
+  - Shaoqing Dai
+  - Guosheng Yang
+  - Cai Wu
+  publisher: Elsevier BV
+  date: '2025-01-01'
+  link: https://doi.org/hcc4pp
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
@@ -242,6 +235,135 @@
   orcid: 0000-0002-5578-5525
   plugin: orcid.py
   file: orcid-wu-cai.yaml
+- id: doi:10.1007/978-981-95-3102-8_1
+  title: "BuildingView: Constructing Urban Building Exteriors Databases with\_Street\
+    \ View Imagery and\_Multimodal Large Language Model"
+  authors:
+  - Zongrong Li
+  - Yunlei Su
+  - Hongrong Wang
+  - Wufan Zhao
+  publisher: Lecture Notes in Computer Science
+  date: '2025-11-12'
+  link: https://doi.org/hbbm72
+  orcid: 0009-0006-8371-7972
+  plugin: orcid.py
+  file: orcid-yun-lei.yaml
+- id: doi:10.2139/ssrn.5336448
+  title: 'Buildingmultiview: Extracting 11 Multi-Scale Building Characteristics from
+    Satellite and Street View Imagery with Large Language Models'
+  authors:
+  - Zongrong Li
+  - Yunlei Su
+  - Filip Biljecki
+  - Wufan Zhao
+  publisher: Elsevier BV
+  date: '2025-01-01'
+  link: https://doi.org/hbf797
+  orcid: 0009-0006-8371-7972
+  plugin: orcid.py
+  file: orcid-yun-lei.yaml
+- id: doi:10.17605/OSF.IO/ABYQH
+  title: CUPUM 2025
+  authors:
+  - Susannah Cramer-Greenbaum
+  - Chen Zhong
+  - Adam Dennett
+  publisher: OSF
+  date: '2025-01-01'
+  link: https://doi.org/g9z5x8
+  orcid: 0009-0006-8371-7972
+  plugin: orcid.py
+  file: orcid-yun-lei.yaml
+- id: doi:10.1007/978-3-031-43699-4_42
+  title: Humans As Sensors in Urban Digital Twins
+  authors:
+  - Binyu Lei
+  - Yunlei Su
+  - Filip Biljecki
+  publisher: Lecture Notes in Geoinformation and Cartography
+  date: '2024-01-01'
+  link: https://doi.org/g9mntk
+  orcid: 0009-0006-8371-7972
+  plugin: orcid.py
+  file: orcid-yun-lei.yaml
+- id: doi:10.48550/ARXIV.2604.07916
+  title: 'Tarot-SAM3: Training-free SAM3 for Any Referring Expression Segmentation'
+  authors:
+  - Weiming Zhang
+  - Dingwen Xiao
+  - Songyue Guo
+  - Guangyu Xiang
+  - Shiqi Wen
+  - Minwei Zhao
+  - Lei Chen
+  - Lin Wang
+  publisher: arXiv
+  date: '2026-01-01'
+  link: https://doi.org/hcc4pq
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.1016/j.scs.2025.106267
+  title: Perceiving the fine-scale urban poverty using street view images through
+    a vision-language model
+  authors:
+  - Chao Wu
+  - Yongxiang Liang
+  - Minwei Zhao
+  - Mingda Teng
+  - Han Yue
+  - Yu Ye
+  publisher: Sustainable Cities and Society
+  date: '2025-04-01'
+  link: https://doi.org/hbftp2
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.48550/ARXIV.2507.03570
+  title: 'From Street Form to Spatial Justice: Explaining Urban Exercise Inequality
+    via a Triadic SHAP-Informed Framework'
+  authors:
+  - Minwei Zhao
+  - Guosheng Yang
+  - Zhuoni Zhang
+  - Filip Biljecki
+  - Hanzhi Zu
+  - Cai Wu
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/hcc4pm
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.48550/ARXIV.2504.04739
+  title: 'MedGNN: Capturing the Links Between Urban Characteristics and Medical Prescriptions'
+  authors:
+  - Minwei Zhao
+  - Sanja Scepanovic
+  - Stephen Law
+  - Ivica Obadic
+  - Cai Wu
+  - Daniele Quercia
+  publisher: arXiv
+  date: '2025-01-01'
+  link: https://doi.org/hbftp3
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
+- id: doi:10.1177/23998083221108191
+  title: 'Measuring urban nighttime vitality and its relationship with urban spatial
+    structure: A data-driven approach'
+  authors:
+  - Chao Wu
+  - Minwei Zhao
+  - Yu Ye
+  publisher: 'Environment and Planning B: Urban Analytics and City Science'
+  date: '2022-06-14'
+  link: https://doi.org/hbftp4
+  orcid: 0000-0002-6380-5426
+  plugin: orcid.py
+  file: orcid-min-wei.yaml
 - id: 10.1007/978-3-031-43699-4_42
   title: Humans As Sensors in Urban Digital Twins
   authors:
