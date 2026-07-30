@@ -8,12 +8,19 @@
   {% assign citation = include %}
 {% endif %}
 
+{% assign citation_pdf = site.data.pdfs
+  | where_exp: "pdf", "pdf.ids contains citation.id"
+  | first
+%}
+{% assign citation_link = citation_pdf.link | default: citation.link %}
+{% assign citation_id = citation_pdf.id | default: citation.id %}
+
 <div class="citation-container">
   <div class="citation">
     {% if include.style == "rich" %}
       <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
+        {% if citation_link %}
+          href="{{ citation_link | relative_url | uri_escape }}"
         {% endif %}
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
@@ -32,8 +39,8 @@
       {% include icon.html icon=type.icon %}
 
       <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | xml_escape }}"
+        {% if citation_link %}
+          href="{{ citation_link | relative_url | xml_escape }}"
         {% endif %}
         class="citation-title"
       >
@@ -69,8 +76,19 @@
         </span>
         &nbsp;·&nbsp;
         <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
+          {{- citation_id | default: "[no id info]" -}}
         </span>
+        {% if citation_pdf.file %}
+          <a
+            class="citation-download"
+            href="{{ citation_pdf.file | relative_url | uri_escape }}"
+            download
+            aria-label="Download {{ citation.title | default: "paper" | regex_strip }}"
+          >
+            {% include icon.html icon="fa-solid fa-download" %}
+            <span>Download</span>
+          </a>
+        {% endif %}
       </div>
 
       {% if include.style == "rich" %}
