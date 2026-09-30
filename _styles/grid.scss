@@ -26,6 +26,19 @@ $one: 500px;
   --repeat: 5;
 }
 
+.team-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 175px), 1fr));
+  max-width: calc(5 * 175px + 4 * 30px);
+  column-gap: 30px;
+  margin-inline: auto;
+}
+
+.team-grid .portrait {
+  width: 100%;
+  max-width: 175px;
+  justify-self: center;
+}
+
 @media (max-width: $two) {
   .grid {
     --repeat: 2;
