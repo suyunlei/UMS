@@ -2,9 +2,9 @@
 name: Zhecheng Shi
 ename: 史哲成
 image: images/zhecheng.jpg
-description: RA
-role: Research Assistant
-group: ra
+description: Alumni
+role: Alumni
+group: alumni
 education:
   - BA in Computer Science and Technology, Northeastern University,Expect 2026
 research_interest:
@@ -15,4 +15,4 @@ links:
   orcid: 0009-0001-8509-3247
 ---
 
-Zhecheng Shi is an undergraduate student in Computer Science and Technology at Northeastern University, expecting to graduate in 2026. He currently serves as a Research Assistant, actively involved in cutting-edge research projects. His academic interests lie at the intersection of machine learning and spatial data science, with a specific focus on Federated Graph Neural Networks (FedGNNs) and Geospatial Artificial Intelligence (GeoAI).
+Zhecheng Shi studied Computer Science and Technology at Northeastern University and served as a research assistant with the team. His academic interests lie at the intersection of machine learning and spatial data science, with a focus on Federated Graph Neural Networks (FedGNNs) and Geospatial Artificial Intelligence (GeoAI).

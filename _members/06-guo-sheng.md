@@ -2,9 +2,9 @@
 name: Guosheng Yang
 ename: 杨国升
 image: images/guosheng.jpg
-description: Mphil Student
-role: Mphil Student
-group: mphil
+description: PhD Student
+role: PhD Student
+group: phd
 education:
   - BA in Architecture, Zhejiang University 2021
 research_interest:
@@ -17,4 +17,4 @@ links:
   instagram: Gs.YANG
 ---
 
-Guosheng is currently a Mphil student from UGOD, The Hong Kong University of Science and Technology (Guangzhou). After achieving his bachelor degree, he worked as an architecture for three years. His current research interests are mainly about the quantitative analysis on urban built environment. By understanding the human perception towards urban built environment, his research aims to inform urban design and planning practice. At HKUST(GZ), Guosheng hopes to integrate human perception with computer vision to quantify urban built environment.
+Guosheng is currently a PhD student in UGOD at The Hong Kong University of Science and Technology (Guangzhou). After earning his bachelor's degree, he worked in architecture for three years. His research focuses on quantitative analysis of the urban built environment and how people perceive it. At HKUST(GZ), he integrates human perception with computer vision to inform urban design and planning.

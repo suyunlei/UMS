@@ -4,7 +4,7 @@ ename: 刘启明
 image: images/qiming.jpg
 description: Visiting Student
 role: Visiting Student
-group: VS
+group: visiting
 education:
   - MSc in Architecture, Wuhan University 2023
   - BA in Architecture, Hefei University of Technology 2020
