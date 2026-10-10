@@ -119,7 +119,7 @@ html[data-studio-theme="light"] { background: #f5f5f2; color-scheme: light; }
 #ums-studio .post-excerpt-text .post-info { margin: 12px 0 !important; }
 #ums-studio .post-excerpt-text .tags { margin: 8px 0 14px !important; }
 #ums-studio .post-info { display: flex; gap: 15px; flex-wrap: wrap; margin: 12px 0; font-size: 11px; color: var(--u-muted); }
-#ums-studio .post-container { max-width: 770px; width: 100%; padding: 0; margin: 0 auto; background: none; border: 0; box-shadow: none; }
+#ums-studio .post-container { max-width: 770px; width: 100%; padding: 0; margin: 0 auto; margin-top: 0 !important; background: none; border: 0; box-shadow: none; }
 #ums-studio .post-title { font-size: 33px; line-height: 1.4; }
 #ums-studio .post-featured-image { margin: 26px 0; padding: 15px; background: var(--u-soft); border-radius: 4px; }
 #ums-studio .post-featured-image img { display: block; width: 100%; max-height: 400px; object-fit: contain; border-radius: 0; }
@@ -133,7 +133,6 @@ html[data-studio-theme="light"] { background: #f5f5f2; color-scheme: light; }
 #ums-studio .card-text p { font: 15px/1.8 var(--u-body); }
 #ums-studio .u-home-head { display: flex; justify-content: space-between; gap: 16px; align-items: end; margin-bottom: 22px; }
 #ums-studio .u-home-head h1 { font-size: 31px; margin: 0; }
-#ums-studio .u-motion { font-size: 10px; background: none; border: 1px solid var(--u-line); padding: 7px 9px; border-radius: 4px; color: var(--u-muted); white-space: nowrap; }
 #ums-studio .u-tiles { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 13px; }
 #ums-studio .u-tile { position: relative; min-width: 0; border: 1px solid var(--u-line); border-radius: 7px; padding: 22px; background: var(--u-panel); display: flex; flex-direction: column; justify-content: space-between; min-height: 180px; }
 #ums-studio .u-hero { grid-column: span 3; border-color: #397d7c; min-height: 330px; overflow: hidden; }
@@ -233,7 +232,7 @@ html[data-studio-theme="light"] { background: #f5f5f2; color-scheme: light; }
   #ums-studio .studio-year-group { grid-template-columns: minmax(0,1fr); gap: 0; }
 }
 @media (max-width: 760px), (pointer: coarse) {
-  #ums-studio :is(.u-motion,.u-filter,.u-themes button,.u-flip-button) { min-height: 44px; font-size: 12px; }
+  #ums-studio :is(.u-filter,.u-themes button,.u-flip-button) { min-height: 44px; font-size: 12px; }
   #ums-studio .u-flip-button { min-width: 44px; }
   #ums-studio :is(.citation-download,.studio-citation summary,.u-person-links a) { min-height: 44px; }
 }

@@ -8,7 +8,6 @@
     try { localStorage.setItem(key, value); } catch { /* Private browsing may disable storage. */ }
   };
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let motion = read('ums-motion', 'on') === 'on' && !reduced.matches;
   const applyTheme = (theme) => {
     theme = theme === 'light' ? 'light' : 'dark';
     root.dataset.theme = theme;
@@ -22,19 +21,9 @@
   root.querySelectorAll('[data-theme-choice]').forEach(button => {
     button.addEventListener('click', () => applyTheme(button.dataset.themeChoice));
   });
-  const motionButton = root.querySelector('[data-motion]');
   const syncMotion = () => {
-    root.dataset.motion = motion && !reduced.matches ? 'on' : 'off';
-    if (motionButton) {
-      motionButton.textContent = root.dataset.motion === 'on' ? 'Pause motion' : 'Play motion';
-      motionButton.setAttribute('aria-pressed', String(root.dataset.motion === 'off'));
-    }
+    root.dataset.motion = reduced.matches ? 'off' : 'on';
   };
-  motionButton?.addEventListener('click', () => {
-    motion = !motion;
-    save('ums-motion', motion ? 'on' : 'off');
-    syncMotion();
-  });
   reduced.addEventListener('change', syncMotion);
   syncMotion();
 
