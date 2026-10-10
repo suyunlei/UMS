@@ -59,13 +59,13 @@
 <meta property="og:title" content="Now Out in International Journal of Applied Earth Observation and Geoinformation: Beyond Fidelity in VR City Modeling">
 <meta property="og:site_title" content="">
 <meta property="og:description" content="A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.">
-<meta property="og:url" content="https://urbanmorphology.studio">
+<meta property="og:url" content="">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Now Out in International Journal of Applied Earth Observation and Geoinformation: Beyond Fidelity in VR City Modeling">
 <meta property="twitter:description" content="A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.">
-<meta property="twitter:url" content="https://urbanmorphology.studio">
+<meta property="twitter:url" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
 
@@ -86,11 +86,11 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
     },
-    "url": "https://urbanmorphology.studio"
+    "url": ""
   }
 </script>
 
-<link rel="alternate" type="application/rss+xml" href="https://urbanmorphology.studio/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
@@ -297,6 +297,7 @@
 
 
 
+  <link rel="stylesheet" href="/assets/studio.css">
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -320,68 +321,34 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+  <script src="/assets/studio.js" defer></script>
 </head>
 
-  <body>
-    
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/background-clear.jpg')" data-dark="true">
-  <a href="/" class="home">
-    
-      <span class="logo">
-        
-          <img src="/images/logo.jpg" alt="logo">
-        
-      </span>
-    
-    
-      <span class="title-text">
-        <span class="title">Urban Morphology Studio</span>
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-    
-      
-        <a href="/research/" data-tooltip="">
-          Research
-        </a>
-      
-    
-      
-        <a href="/team/" data-tooltip="">
-          Team
-        </a>
-      
-    
-      
-        <a href="/news/" data-tooltip="">
-          News
-        </a>
-      
-    
-      
-        <a href="/contact/" data-tooltip="">
-          Contact
-        </a>
-      
-    
+  <body id="ums-studio" data-theme="dark" class="studio-ui ">
+    <a class="studio-skip" href="#main-content">Skip to content</a>
+    <header class="u-header">
+  <div class="u-top">
+    <a href="/" class="u-brand">
+      <img class="u-logo" src="/images/logo.jpg" width="60" height="31" alt="Urban Morphology Studio logo">
+      <span>URBAN MORPHOLOGY<br>STUDIO</span>
+    </a>
+    <div class="u-themes" role="group" aria-label="Color theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Bright</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="true">Dark</button>
+    </div>
+  </div>
+  <nav class="u-nav" aria-label="Main navigation">
+    <a href="/">Home</a>
+    <a href="/research/">Research</a>
+    <a href="/team/">Team</a>
+    <a href="/news/" aria-current="page">News</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </header>
 
-    <main>
+    <main class="u-page" id="main-content">
+      
       <!--
   modify main content of page:
   - add section breaks
@@ -438,7 +405,7 @@
   
 
 
-  <div class="tags">
+  <div class="tags" data-link="/news">
     
       <a href="/news?search=%22tag:%20research%22" class="tag" data-tooltip='Show items with the tag "research"'>
         research
@@ -561,177 +528,18 @@
   </section>
 
 
+      
     </main>
-    
-
-
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <!-- <div>
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="mailto:contact@your-lab.com"
-      
-        data-tooltip="Email"
-      
-      data-style="bare"
-      
-      aria-label="Email"
-    >
-      <i class="icon fa-solid fa-envelope"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://orcid.org/0000-0002-5578-5525"
-      
-        data-tooltip="ORCID"
-      
-      data-style="bare"
-      
-      aria-label="ORCID"
-    >
-      <i class="icon fa-brands fa-orcid"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://scholar.google.com/citations?user=ETJoidYAAAAJ"
-      
-        data-tooltip="Google Scholar"
-      
-      data-style="bare"
-      
-      aria-label="Google Scholar"
-    >
-      <i class="icon fa-brands fa-google"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://github.com/your-lab"
-      
-        data-tooltip="GitHub"
-      
-      data-style="bare"
-      
-      aria-label="GitHub"
-    >
-      <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://twitter.com/YourLabHandle"
-      
-        data-tooltip="Twitter"
-      
-      data-style="bare"
-      
-      aria-label="Twitter"
-    >
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://youtube.com/YourLabChannel"
-      
-        data-tooltip="YouTube"
-      
-      data-style="bare"
-      
-      aria-label="YouTube"
-    >
-      <i class="icon fa-brands fa-youtube"></i>
-      
-    </a>
-  </div>
-
-
-    
-  </div> -->
-
+    <footer class="u-footer">
+  <span>© 2026 Urban Morphology Studio · HKUST(GZ)</span>
   <div>
-    © 2026
-    
-      |   Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
-    </a>
-  </div>
+<a href="/projects/">Projects</a><a href="/feed.xml">RSS</a><a href="mailto:caiwu@hkust-gz.edu.cn">Contact</a><a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
+</div>
 </footer>
 
-    <button id="back-to-top" class="back-to-top" data-tooltip="回到顶部">
+    <button id="back-to-top" class="back-to-top" data-tooltip="Back to top" aria-label="Back to top">
   <i class="icon fa-solid fa-arrow-up"></i>
 </button>
+
   </body>
 </html>

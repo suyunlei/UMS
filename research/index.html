@@ -59,13 +59,13 @@
 <meta property="og:title" content="Research">
 <meta property="og:site_title" content="">
 <meta property="og:description" content="A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.">
-<meta property="og:url" content="https://urbanmorphology.studio">
+<meta property="og:url" content="">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Research">
 <meta property="twitter:description" content="A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.">
-<meta property="twitter:url" content="https://urbanmorphology.studio">
+<meta property="twitter:url" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
 
@@ -86,11 +86,11 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
     },
-    "url": "https://urbanmorphology.studio"
+    "url": ""
   }
 </script>
 
-<link rel="alternate" type="application/rss+xml" href="https://urbanmorphology.studio/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
@@ -349,6 +349,7 @@
 
 
 
+  <link rel="stylesheet" href="/assets/studio.css">
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -372,68 +373,34 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+  <script src="/assets/studio.js" defer></script>
 </head>
 
-  <body>
-    
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/background-clear.jpg')" data-dark="true">
-  <a href="/" class="home">
-    
-      <span class="logo">
-        
-          <img src="/images/logo.jpg" alt="logo">
-        
-      </span>
-    
-    
-      <span class="title-text">
-        <span class="title">Urban Morphology Studio</span>
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-    
-      
-        <a href="/research/" data-tooltip="">
-          Research
-        </a>
-      
-    
-      
-        <a href="/team/" data-tooltip="">
-          Team
-        </a>
-      
-    
-      
-        <a href="/news/" data-tooltip="">
-          News
-        </a>
-      
-    
-      
-        <a href="/contact/" data-tooltip="">
-          Contact
-        </a>
-      
-    
+  <body id="ums-studio" data-theme="dark" class="studio-ui page-research">
+    <a class="studio-skip" href="#main-content">Skip to content</a>
+    <header class="u-header">
+  <div class="u-top">
+    <a href="/" class="u-brand">
+      <img class="u-logo" src="/images/logo.jpg" width="60" height="31" alt="Urban Morphology Studio logo">
+      <span>URBAN MORPHOLOGY<br>STUDIO</span>
+    </a>
+    <div class="u-themes" role="group" aria-label="Color theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Bright</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="true">Dark</button>
+    </div>
+  </div>
+  <nav class="u-nav" aria-label="Main navigation">
+    <a href="/">Home</a>
+    <a href="/research/" aria-current="page">Research</a>
+    <a href="/team/">Team</a>
+    <a href="/news/">News</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </header>
 
-    <main>
+    <main class="u-page" id="main-content">
+      
       <!--
   modify main content of page:
   - add section breaks
@@ -483,12 +450,34 @@
   </button>
 </div>
 
+<p><label class="studio-year">Publication year<select data-publication-year="" aria-label="Publication year"><option value="all">All years</option>
+<option value="2026">2026</option>
+<option value="2025">2025</option>
+<option value="2024">2024</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option></select></label></p>
+
 <div class="search-info"></div>
 
-<h3 id="2026">2026</h3>
+<div class="studio-year-group">
+
+  <h3 id="2026">2026</h3>
+    
+  
+
+  <div class="studio-year-items">
+
+  
+    
+
+    
+
+
+
+
 
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/10.1016/j.compenvurbsys.2026.102466" class="citation-image" aria-label="UST-GNN: A unified spatial topological graph neural network framework for urban analytics demonstrated through a case study on urban health prediction">
         <img src="" alt="UST-GNN: A unified spatial topological graph neural network framework for urban analytics demonstrated through a case study on urban health prediction" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -508,6 +497,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Computers, Environment and Urban Systems</span>
          · 
@@ -522,6 +512,8 @@
         
       </div>
 
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Sanja Šćepanović, Stephen Law, Ivica Obadić, Cai Wu, Daniele Quercia. (2026). UST-GNN: A unified spatial–topological graph neural network framework for urban analytics demonstrated through a case study on urban health prediction. <em>Computers, Environment and Urban Systems</em>. <a href="https://doi.org/10.1016/j.compenvurbsys.2026.102466">https://doi.org/10.1016/j.compenvurbsys.2026.102466</a></p></details>
+
       
         
 
@@ -533,8 +525,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/hckmm7" class="citation-image" aria-label="Street space as health infrastructure: diagnosing uneven street support for exercise through the spatial triad">
         <img src="" alt="Street space as health infrastructure: diagnosing uneven street support for exercise through the spatial triad" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -554,6 +555,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Building and Environment</span>
          · 
@@ -562,6 +564,8 @@
         <span class="citation-id">doi:10.1016/j.buildenv.2026.115095</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Guosheng Yang, Zhuoni Zhang, Filip Biljecki, Hanzhi Zu, Cai Wu. (2026). Street space as health infrastructure: diagnosing uneven street support for exercise through the spatial triad. <em>Building and Environment</em>. <a href="https://doi.org/hckmm7">https://doi.org/hckmm7</a></p></details>
 
       
         
@@ -574,8 +578,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/10.1016/j.scs.2026.107575" class="citation-image" aria-label="Theory-informed and interpretable graph learning for urban commuting flows">
         <img src="" alt="Theory-informed and interpretable graph learning for urban commuting flows" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -595,6 +608,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Sustainable Cities and Society</span>
          · 
@@ -609,6 +623,8 @@
         
       </div>
 
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Dailuo Zhang, Zhecheng Shi, Cai Wu. (2026). Theory-informed and interpretable graph learning for urban commuting flows. <em>Sustainable Cities and Society</em>. <a href="https://doi.org/10.1016/j.scs.2026.107575">https://doi.org/10.1016/j.scs.2026.107575</a></p></details>
+
       
         
 
@@ -620,8 +636,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/hb5gqn" class="citation-image" aria-label="Understanding multi-perspective urban green space patterns under urban expansion: Evidence from Guangzhou">
         <img src="" alt="Understanding multi-perspective urban green space patterns under urban expansion: Evidence from Guangzhou" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -641,6 +666,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Sustainable Cities and Society</span>
          · 
@@ -649,6 +675,8 @@
         <span class="citation-id">doi:10.1016/j.scs.2026.107534</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Qiming Liu, Shaoqing Dai, Guosheng Yang, Cai Wu. (2026). Understanding multi-perspective urban green space patterns under urban expansion: Evidence from Guangzhou. <em>Sustainable Cities and Society</em>. <a href="https://doi.org/hb5gqn">https://doi.org/hb5gqn</a></p></details>
 
       
         
@@ -661,8 +689,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/hb5gqm" class="citation-image" aria-label="Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view imagery and what it reveals about perception">
         <img src="" alt="Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view imagery and what it reveals about perception" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -682,6 +719,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Cities</span>
          · 
@@ -690,6 +728,8 @@
         <span class="citation-id">doi:10.1016/j.cities.2026.107227</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Guosheng Yang, Yunlei Su, Minwei Zhao, Chaosu Li, Cai Wu. (2026). Beyond single snapshots: Quantifying multi-scale heterogeneity from street-view imagery and what it reveals about perception. <em>Cities</em>. <a href="https://doi.org/hb5gqm">https://doi.org/hb5gqm</a></p></details>
 
       
         
@@ -702,8 +742,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/10.1016/j.jag.2026.105484" class="citation-image" aria-label="Beyond fidelity: Rethinking realism through human behavior in VR city modeling LOD design">
         <img src="" alt="Beyond fidelity: Rethinking realism through human behavior in VR city modeling LOD design" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -723,6 +772,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">International Journal of Applied Earth Observation and Geoinformation</span>
          · 
@@ -737,6 +787,8 @@
         
       </div>
 
+      <details class="studio-citation"><summary>Citation</summary><p>Yunlei Su, Guosheng Yang, Wufan Zhao, Cai Wu. (2026). Beyond fidelity: Rethinking realism through human behavior in VR city modeling LOD design. <em>International Journal of Applied Earth Observation and Geoinformation</em>. <a href="https://doi.org/10.1016/j.jag.2026.105484">https://doi.org/10.1016/j.jag.2026.105484</a></p></details>
+
       
         
 
@@ -748,8 +800,70 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
+    
+      <a href="https://doi.org/hbjnc9" class="citation-image" aria-label="BuildingMultiView:powering multi-scale building characterization with large language models and Multi-perspective imagery">
+        <img src="" alt="BuildingMultiView:powering multi-scale building characterization with large language models and Multi-perspective imagery" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbjnc9" class="citation-title">
+        BuildingMultiView:powering multi-scale building characterization with large language models and Multi-perspective imagery
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Zongrong Li, Yunlei Su, Filip Biljecki, Wufan Zhao
+
+      </div>
+
+
+      <div class="citation-details">
+        <span class="citation-publisher">International Journal of Applied Earth Observation and Geoinformation</span>
+         · 
+        <span class="citation-date">01 Feb 2026</span>
+         · 
+        <span class="citation-id">doi:10.1016/j.jag.2025.105034</span>
+        
+      </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Zongrong Li, Yunlei Su, Filip Biljecki, Wufan Zhao. (2026). BuildingMultiView:powering multi-scale building characterization with large language models and Multi-perspective imagery. <em>International Journal of Applied Earth Observation and Geoinformation</em>. <a href="https://doi.org/hbjnc9">https://doi.org/hbjnc9</a></p></details>
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+    
+
+    
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/hcc4pq" class="citation-image" aria-label="Tarot-SAM3: Training-free SAM3 for Any Referring Expression Segmentation">
         <img src="" alt="Tarot-SAM3: Training-free SAM3 for Any Referring Expression Segmentation" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -769,6 +883,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">arXiv</span>
          · 
@@ -777,6 +892,8 @@
         <span class="citation-id">doi:10.48550/ARXIV.2604.07916</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Weiming Zhang, Dingwen Xiao, Songyue Guo, Guangyu Xiang, Shiqi Wen, Minwei Zhao, Lei Chen, Lin Wang. (2026). Tarot-SAM3: Training-free SAM3 for Any Referring Expression Segmentation. <em>arXiv</em>. <a href="https://doi.org/hcc4pq">https://doi.org/hcc4pq</a></p></details>
 
       
         
@@ -789,8 +906,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2026">
     
       <a href="https://doi.org/hckmm8" class="citation-image" aria-label="Urban Boundaries, Social Barriers: A Benchmark and Vision-Centric Framework for Mapping Gated Communities and Equity Implications">
         <img src="" alt="Urban Boundaries, Social Barriers: A Benchmark and Vision-Centric Framework for Mapping Gated Communities and Equity Implications" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -810,6 +936,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Lecture Notes in Computer Science</span>
          · 
@@ -818,6 +945,8 @@
         <span class="citation-id">doi:10.1007/978-3-032-37356-4_23</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Weiming Zhang, Jiawang Du, Qiming Liu, Weiming Zhuang, Pei Nie, Cai Wu. (2026). Urban Boundaries, Social Barriers: A Benchmark and Vision-Centric Framework for Mapping Gated Communities and Equity Implications. <em>Lecture Notes in Computer Science</em>. <a href="https://doi.org/hckmm8">https://doi.org/hckmm8</a></p></details>
 
       
         
@@ -830,10 +959,29 @@
   </div>
 </div>
 
-<h3 id="2025">2025</h3>
+  
+  </div>
+</div>
+
+<div class="studio-year-group">
+
+  <h3 id="2025">2025</h3>
+    
+  
+
+  <div class="studio-year-items">
+
+  
+    
+
+    
+
+
+
+
 
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/g9749p" class="citation-image" aria-label="Advancing graph-supported machine learning in generative design for architectural engineering">
         <img src="" alt="Advancing graph-supported machine learning in generative design for architectural engineering" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -853,6 +1001,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Automation in Construction</span>
          · 
@@ -861,6 +1010,8 @@
         <span class="citation-id">doi:10.1016/J.AUTCON.2025.106530</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Hanmo Wang, Zhuyin Lu, Shawn Owyong, Huan Ting Chen, Cai Wu, Tam H. Nguyen, Alexander Lin. (2025). Advancing graph-supported machine learning in generative design for architectural engineering. <em>Automation in Construction</em>. <a href="https://doi.org/g9749p">https://doi.org/g9749p</a></p></details>
 
       
         
@@ -873,8 +1024,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hbbm72" class="citation-image" aria-label="BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Model">
         <img src="" alt="BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Model" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -894,6 +1054,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Lecture Notes in Computer Science</span>
          · 
@@ -902,6 +1063,8 @@
         <span class="citation-id">doi:10.1007/978-981-95-3102-8_1</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Zongrong Li, Yunlei Su, Hongrong Wang, Wufan Zhao. (2025). BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Model. <em>Lecture Notes in Computer Science</em>. <a href="https://doi.org/hbbm72">https://doi.org/hbbm72</a></p></details>
 
       
         
@@ -914,8 +1077,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/g9fp47" class="citation-image" aria-label="Formalising the urban pattern language: A morphological paradigm towards understanding the multi-scalar spatial structure of cities">
         <img src="" alt="Formalising the urban pattern language: A morphological paradigm towards understanding the multi-scalar spatial structure of cities" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -935,6 +1107,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Cities</span>
          · 
@@ -943,6 +1116,8 @@
         <span class="citation-id">doi:10.1016/J.CITIES.2025.105854</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Cai Wu, Jiong Wang, Mingshu Wang, Filip Biljecki, Menno-Jan Kraak. (2025). Formalising the urban pattern language: A morphological paradigm towards understanding the multi-scalar spatial structure of cities. <em>Cities</em>. <a href="https://doi.org/g9fp47">https://doi.org/g9fp47</a></p></details>
 
       
         
@@ -955,8 +1130,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hbftp2" class="citation-image" aria-label="Perceiving the fine-scale urban poverty using street view images through a vision-language model">
         <img src="" alt="Perceiving the fine-scale urban poverty using street view images through a vision-language model" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -976,6 +1160,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Sustainable Cities and Society</span>
          · 
@@ -984,6 +1169,8 @@
         <span class="citation-id">doi:10.1016/j.scs.2025.106267</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Chao Wu, Yongxiang Liang, Minwei Zhao, Mingda Teng, Han Yue, Yu Ye. (2025). Perceiving the fine-scale urban poverty using street view images through a vision-language model. <em>Sustainable Cities and Society</em>. <a href="https://doi.org/hbftp2">https://doi.org/hbftp2</a></p></details>
 
       
         
@@ -996,8 +1183,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hbftp3" class="citation-image" aria-label="UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction">
         <img src="" alt="UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1017,6 +1213,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">arXiv</span>
          · 
@@ -1025,6 +1222,8 @@
         <span class="citation-id">doi:10.48550/ARXIV.2504.04739</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Sanja Scepanovic, Stephen Law, Ivica Obadic, Cai Wu, Daniele Quercia. (2025). UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction. <em>arXiv</em>. <a href="https://doi.org/hbftp3">https://doi.org/hbftp3</a></p></details>
 
       
         
@@ -1037,8 +1236,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hcc4pm" class="citation-image" aria-label="From Street Form to Spatial Justice: Explaining Urban Exercise Inequality via a Triadic SHAP-Informed Framework">
         <img src="" alt="From Street Form to Spatial Justice: Explaining Urban Exercise Inequality via a Triadic SHAP-Informed Framework" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1058,6 +1266,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">arXiv</span>
          · 
@@ -1066,6 +1275,8 @@
         <span class="citation-id">doi:10.48550/ARXIV.2507.03570</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Guosheng Yang, Zhuoni Zhang, Filip Biljecki, Hanzhi Zu, Cai Wu. (2025). From Street Form to Spatial Justice: Explaining Urban Exercise Inequality via a Triadic SHAP-Informed Framework. <em>arXiv</em>. <a href="https://doi.org/hcc4pm">https://doi.org/hcc4pm</a></p></details>
 
       
         
@@ -1078,8 +1289,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hcc4pp" class="citation-image" aria-label="The Transformation of Green Spaces Under Urban Expansion: A Study on the Coordination of Urban Expansion and Green Spaces in Guangzhou">
         <img src="" alt="The Transformation of Green Spaces Under Urban Expansion: A Study on the Coordination of Urban Expansion and Green Spaces in Guangzhou" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1099,6 +1319,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Elsevier BV</span>
          · 
@@ -1107,6 +1328,8 @@
         <span class="citation-id">doi:10.2139/ssrn.5546713</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Qiming Liu, Shaoqing Dai, Guosheng Yang, Cai Wu. (2025). The Transformation of Green Spaces Under Urban Expansion: A Study on the Coordination of Urban Expansion and Green Spaces in Guangzhou. <em>Elsevier BV</em>. <a href="https://doi.org/hcc4pp">https://doi.org/hcc4pp</a></p></details>
 
       
         
@@ -1119,8 +1342,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hbftp3" class="citation-image" aria-label="UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction">
         <img src="" alt="UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1140,6 +1372,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">arXiv</span>
          · 
@@ -1148,6 +1381,8 @@
         <span class="citation-id">doi:10.48550/arXiv.2504.04739</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Sanja Scepanovic, Stephen Law, Ivica Obadic, Cai Wu, Daniele Quercia. (2025). UST-GNN: A Unified Spatial--Topological Graph Neural Network Framework for Urban Analytics--Demonstrated through a Case Study on Urban Health Prediction. <em>arXiv</em>. <a href="https://doi.org/hbftp3">https://doi.org/hbftp3</a></p></details>
 
       
         
@@ -1160,8 +1395,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hcc4pm" class="citation-image" aria-label="From Street Form to Spatial Justice: Explaining Urban Exercise Inequality via a Triadic SHAP-Informed Framework">
         <img src="" alt="From Street Form to Spatial Justice: Explaining Urban Exercise Inequality via a Triadic SHAP-Informed Framework" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1181,6 +1425,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">arXiv</span>
          · 
@@ -1189,6 +1434,8 @@
         <span class="citation-id">doi:10.48550/arXiv.2507.03570</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Minwei Zhao, Guosheng Yang, Zhuoni Zhang, Filip Biljecki, Hanzhi Zu, Cai Wu. (2025). From Street Form to Spatial Justice: Explaining Urban Exercise Inequality via a Triadic SHAP-Informed Framework. <em>arXiv</em>. <a href="https://doi.org/hcc4pm">https://doi.org/hcc4pm</a></p></details>
 
       
         
@@ -1201,8 +1448,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/g9z5x8" class="citation-image" aria-label="CUPUM 2025">
         <img src="" alt="CUPUM 2025" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1222,6 +1478,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">OSF</span>
          · 
@@ -1230,6 +1487,8 @@
         <span class="citation-id">doi:10.17605/OSF.IO/ABYQH</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Susannah Cramer-Greenbaum, Chen Zhong, Adam Dennett. (2025). CUPUM 2025. <em>OSF</em>. <a href="https://doi.org/g9z5x8">https://doi.org/g9z5x8</a></p></details>
 
       
         
@@ -1242,8 +1501,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/hbf797" class="citation-image" aria-label="Buildingmultiview: Extracting 11 Multi-Scale Building Characteristics from Satellite and Street View Imagery with Large Language Models">
         <img src="" alt="Buildingmultiview: Extracting 11 Multi-Scale Building Characteristics from Satellite and Street View Imagery with Large Language Models" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1263,6 +1531,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Elsevier BV</span>
          · 
@@ -1271,6 +1540,8 @@
         <span class="citation-id">doi:10.2139/ssrn.5336448</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Zongrong Li, Yunlei Su, Filip Biljecki, Wufan Zhao. (2025). Buildingmultiview: Extracting 11 Multi-Scale Building Characteristics from Satellite and Street View Imagery with Large Language Models. <em>Elsevier BV</em>. <a href="https://doi.org/hbf797">https://doi.org/hbf797</a></p></details>
 
       
         
@@ -1283,8 +1554,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2025">
     
       <a href="https://doi.org/10.1016/j.jag.2026.105484" class="citation-image" aria-label="Beyond Fidelity: Rethinking Realism Through Human Behavior in VR City Modeling LOD Design">
         <img src="" alt="Beyond Fidelity: Rethinking Realism Through Human Behavior in VR City Modeling LOD Design" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1304,6 +1584,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Elsevier BV</span>
          · 
@@ -1318,6 +1599,8 @@
         
       </div>
 
+      <details class="studio-citation"><summary>Citation</summary><p>YUNLEI SU, Guosheng Yang, Wufan Zhao, Cai Wu. (2025). Beyond Fidelity: Rethinking Realism Through Human Behavior in VR City Modeling LOD Design. <em>Elsevier BV</em>. <a href="https://doi.org/10.1016/j.jag.2026.105484">https://doi.org/10.1016/j.jag.2026.105484</a></p></details>
+
       
         
 
@@ -1329,10 +1612,29 @@
   </div>
 </div>
 
-<h3 id="2024">2024</h3>
+  
+  </div>
+</div>
+
+<div class="studio-year-group">
+
+  <h3 id="2024">2024</h3>
+    
+  
+
+  <div class="studio-year-items">
+
+  
+    
+
+    
+
+
+
+
 
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2024">
     
       <a href="https://doi.org/g9mnv5" class="citation-image" aria-label="Local Hubs and Global Gateways : Understanding the impact of Singapore s master plan on urban polycentricity">
         <img src="" alt="Local Hubs and Global Gateways : Understanding the impact of Singapore s master plan on urban polycentricity" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1352,6 +1654,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Environment and Planning B: Urban Analytics and City Science</span>
          · 
@@ -1360,6 +1663,8 @@
         <span class="citation-id">doi:10.1177/23998083241267070</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Cai Wu, Mingshu Wang, Jiong Wang, Duncan Smith, Menno-Jan Kraak. (2024). ‘Local Hubs and Global Gateways’: Understanding the impact of Singapore’s master plan on urban polycentricity. <em>Environment and Planning B: Urban Analytics and City Science</em>. <a href="https://doi.org/g9mnv5">https://doi.org/g9mnv5</a></p></details>
 
       
         
@@ -1372,8 +1677,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2024">
     
       <a href="https://doi.org/g9mnv6" class="citation-image" aria-label="Machine learning-based characterisation of urban morphology with the street pattern">
         <img src="" alt="Machine learning-based characterisation of urban morphology with the street pattern" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1393,6 +1707,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Computers, Environment and Urban Systems</span>
          · 
@@ -1401,6 +1716,8 @@
         <span class="citation-id">doi:10.1016/j.compenvurbsys.2024.102078</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Cai Wu, Jiong Wang, Mingshu Wang, Menno-Jan Kraak. (2024). Machine learning-based characterisation of urban morphology with the street pattern. <em>Computers, Environment and Urban Systems</em>. <a href="https://doi.org/g9mnv6">https://doi.org/g9mnv6</a></p></details>
 
       
         
@@ -1413,8 +1730,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2024">
     
       <a href="https://doi.org/g9mnv7" class="citation-image" aria-label="Mapping Street Patterns with Network Science and Supervised Machine Learning">
         <img src="" alt="Mapping Street Patterns with Network Science and Supervised Machine Learning" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1434,6 +1760,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">ISPRS International Journal of Geo-Information</span>
          · 
@@ -1442,6 +1769,8 @@
         <span class="citation-id">doi:10.3390/IJGI13040114</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Cai Wu, Yanwen Wang, Jiong Wang, Menno-Jan Kraak, Mingshu Wang. (2024). Mapping Street Patterns with Network Science and Supervised Machine Learning. <em>ISPRS International Journal of Geo-Information</em>. <a href="https://doi.org/g9mnv7">https://doi.org/g9mnv7</a></p></details>
 
       
         
@@ -1454,8 +1783,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2024">
     
       <a href="https://doi.org/g9mntk" class="citation-image" aria-label="Humans As Sensors in Urban Digital Twins">
         <img src="https://www.researchgate.net/profile/Filip-Biljecki/publication/378355824/figure/fig1/AS:11431281225580244@1708845623746/The-framework-of-human-centric-urban-digital-twins.png" alt="Humans As Sensors in Urban Digital Twins" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1475,6 +1813,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Lecture Notes in Geoinformation and Cartography</span>
          · 
@@ -1483,6 +1822,9 @@
         <span class="citation-id">10.1007/978-3-031-43699-4_42</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Binyu Lei, Yunlei Su, Filip Biljecki. (2024). Humans As Sensors in Urban Digital Twins. <em>Lecture Notes in Geoinformation and Cartography</em>. <a href="https://doi.org/g9mntk">https://doi.org/g9mntk</a></p>
+<img src="https://www.researchgate.net/profile/Filip-Biljecki/publication/378355824/figure/fig1/AS:11431281225580244@1708845623746/The-framework-of-human-centric-urban-digital-twins.png" alt="Humans As Sensors in Urban Digital Twins" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;"></details>
 
       
         
@@ -1547,7 +1889,7 @@
           
 
 
-  <div class="tags">
+  <div class="tags" data-link="/research/">
     
       <a href="/research/?search=%22tag:%20digital-twin%22" class="tag" data-tooltip='Show items with the tag "digital-twin"'>
         digital-twin
@@ -1566,8 +1908,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2024">
     
       <a href="https://doi.org/g9mntk" class="citation-image" aria-label="Humans As Sensors in Urban Digital Twins">
         <img src="" alt="Humans As Sensors in Urban Digital Twins" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1587,6 +1938,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Lecture Notes in Geoinformation and Cartography</span>
          · 
@@ -1595,6 +1947,8 @@
         <span class="citation-id">doi:10.1007/978-3-031-43699-4_42</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Binyu Lei, Yunlei Su, Filip Biljecki. (2024). Humans As Sensors in Urban Digital Twins. <em>Lecture Notes in Geoinformation and Cartography</em>. <a href="https://doi.org/g9mntk">https://doi.org/g9mntk</a></p></details>
 
       
         
@@ -1607,10 +1961,82 @@
   </div>
 </div>
 
-<h3 id="2022">2022</h3>
+  
+    
+
+    
+
+
+
+
 
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2024">
+    
+      <a href="https://doi.org/hbnzpd" class="citation-image" aria-label="BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Mode">
+        <img src="" alt="BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Mode" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      
+
+      <a href="https://doi.org/hbnzpd" class="citation-title">
+        BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Mode
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Zongrong Li, Yunlei Su, Hongrong Wang, Wufan Zhao
+
+      </div>
+
+
+      <div class="citation-details">
+        <span class="citation-publisher">arXiv</span>
+         · 
+        <span class="citation-date">01 Jan 2024</span>
+         · 
+        <span class="citation-id">doi:10.48550/arXiv.2409.19527</span>
+        
+      </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Zongrong Li, Yunlei Su, Hongrong Wang, Wufan Zhao. (2024). BuildingView: Constructing Urban Building Exteriors Databases with Street View Imagery and Multimodal Large Language Mode. <em>arXiv</em>. <a href="https://doi.org/hbnzpd">https://doi.org/hbnzpd</a></p></details>
+
+      
+        
+
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+  
+  </div>
+</div>
+
+<div class="studio-year-group">
+
+  <h3 id="2022">2022</h3>
+    
+  
+
+  <div class="studio-year-items">
+
+  
+    
+
+    
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation" data-year="2022">
     
       <a href="https://doi.org/gtbpgs" class="citation-image" aria-label="Identifying Urban Functional Regions from High-Resolution Satellite Images Using a Context-Aware Segmentation Network">
         <img src="" alt="Identifying Urban Functional Regions from High-Resolution Satellite Images Using a Context-Aware Segmentation Network" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1630,6 +2056,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Remote Sensing</span>
          · 
@@ -1638,6 +2065,8 @@
         <span class="citation-id">doi:10.3390/rs14163996</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Wufan Zhao, Mengmeng Li, Cai Wu, Wen Zhou, Guozhong Chu. (2022). Identifying Urban Functional Regions from High-Resolution Satellite Images Using a Context-Aware Segmentation Network. <em>Remote Sensing</em>. <a href="https://doi.org/gtbpgs">https://doi.org/gtbpgs</a></p></details>
 
       
         
@@ -1650,8 +2079,17 @@
   </div>
 </div>
 
+  
+    
+
+    
+
+
+
+
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2022">
     
       <a href="https://doi.org/hbftp4" class="citation-image" aria-label="Measuring urban nighttime vitality and its relationship with urban spatial structure: A data-driven approach">
         <img src="" alt="Measuring urban nighttime vitality and its relationship with urban spatial structure: A data-driven approach" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1671,6 +2109,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Environment and Planning B: Urban Analytics and City Science</span>
          · 
@@ -1679,6 +2118,8 @@
         <span class="citation-id">doi:10.1177/23998083221108191</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Chao Wu, Minwei Zhao, Yu Ye. (2022). Measuring urban nighttime vitality and its relationship with urban spatial structure: A data-driven approach. <em>Environment and Planning B: Urban Analytics and City Science</em>. <a href="https://doi.org/hbftp4">https://doi.org/hbftp4</a></p></details>
 
       
         
@@ -1691,10 +2132,29 @@
   </div>
 </div>
 
-<h3 id="2021">2021</h3>
+  
+  </div>
+</div>
+
+<div class="studio-year-group">
+
+  <h3 id="2021">2021</h3>
+    
+  
+
+  <div class="studio-year-items">
+
+  
+    
+
+    
+
+
+
+
 
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation" data-year="2021">
     
       <a href="https://doi.org/gpbbp3" class="citation-image" aria-label="Simulating the urban spatial structure with spatial interaction: A case study of urban polycentricity under different scenarios">
         <img src="" alt="Simulating the urban spatial structure with spatial interaction: A case study of urban polycentricity under different scenarios" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
@@ -1714,6 +2174,7 @@
 
       </div>
 
+
       <div class="citation-details">
         <span class="citation-publisher">Computers, Environment and Urban Systems</span>
          · 
@@ -1722,6 +2183,8 @@
         <span class="citation-id">doi:10.1016/j.compenvurbsys.2021.101677</span>
         
       </div>
+
+      <details class="studio-citation"><summary>Citation</summary><p>Cai Wu, Duncan Smith, Mingshu Wang. (2021). Simulating the urban spatial structure with spatial interaction: A case study of urban polycentricity under different scenarios. <em>Computers, Environment and Urban Systems</em>. <a href="https://doi.org/gpbbp3">https://doi.org/gpbbp3</a></p></details>
 
       
         
@@ -1733,180 +2196,25 @@
     </div>
   </div>
 </div>
+
+  
+  </div>
+</div>
   </section>
 
 
+      
     </main>
-    
-
-
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <!-- <div>
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="mailto:contact@your-lab.com"
-      
-        data-tooltip="Email"
-      
-      data-style="bare"
-      
-      aria-label="Email"
-    >
-      <i class="icon fa-solid fa-envelope"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://orcid.org/0000-0002-5578-5525"
-      
-        data-tooltip="ORCID"
-      
-      data-style="bare"
-      
-      aria-label="ORCID"
-    >
-      <i class="icon fa-brands fa-orcid"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://scholar.google.com/citations?user=ETJoidYAAAAJ"
-      
-        data-tooltip="Google Scholar"
-      
-      data-style="bare"
-      
-      aria-label="Google Scholar"
-    >
-      <i class="icon fa-brands fa-google"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://github.com/your-lab"
-      
-        data-tooltip="GitHub"
-      
-      data-style="bare"
-      
-      aria-label="GitHub"
-    >
-      <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://twitter.com/YourLabHandle"
-      
-        data-tooltip="Twitter"
-      
-      data-style="bare"
-      
-      aria-label="Twitter"
-    >
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://youtube.com/YourLabChannel"
-      
-        data-tooltip="YouTube"
-      
-      data-style="bare"
-      
-      aria-label="YouTube"
-    >
-      <i class="icon fa-brands fa-youtube"></i>
-      
-    </a>
-  </div>
-
-
-    
-  </div> -->
-
+    <footer class="u-footer">
+  <span>© 2026 Urban Morphology Studio · HKUST(GZ)</span>
   <div>
-    © 2026
-    
-      |   Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
-    </a>
-  </div>
+<a href="/projects/">Projects</a><a href="/feed.xml">RSS</a><a href="mailto:caiwu@hkust-gz.edu.cn">Contact</a><a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
+</div>
 </footer>
 
-    <button id="back-to-top" class="back-to-top" data-tooltip="回到顶部">
+    <button id="back-to-top" class="back-to-top" data-tooltip="Back to top" aria-label="Back to top">
   <i class="icon fa-solid fa-arrow-up"></i>
 </button>
+
   </body>
 </html>

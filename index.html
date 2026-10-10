@@ -59,13 +59,13 @@
 <meta property="og:title" content="">
 <meta property="og:site_title" content="">
 <meta property="og:description" content="A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.">
-<meta property="og:url" content="https://urbanmorphology.studio">
+<meta property="og:url" content="">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="">
 <meta property="twitter:description" content="A research group at the HKUST(GZ) focused on urban morphology and spatial analysis.">
-<meta property="twitter:url" content="https://urbanmorphology.studio">
+<meta property="twitter:url" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
 
@@ -86,11 +86,11 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
     },
-    "url": "https://urbanmorphology.studio"
+    "url": ""
   }
 </script>
 
-<link rel="alternate" type="application/rss+xml" href="https://urbanmorphology.studio/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
@@ -349,6 +349,7 @@
 
 
 
+  <link rel="stylesheet" href="/assets/studio.css">
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -372,84 +373,191 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+  <script src="/assets/studio.js" defer></script>
 </head>
 
-  <body>
-    
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/background.gif')" data-home-background data-not-sticky data-home-layout data-dark="true">
-  <a href="/" class="home">
-    
-      <span class="logo">
-        <img src="/images/logo-index.png" alt="home logo" style="width: 150%;height: 150%;margin-top: 50px;">
-      </span>
-    
-    
-      <span class="title-text" style="display: none;">
-        <span class="title">Urban Morphology Studio</span>
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-    
-      
-        <a href="/research/" data-tooltip="">
-          Research
-        </a>
-      
-    
-      
-        <a href="/team/" data-tooltip="">
-          Team
-        </a>
-      
-    
-      
-        <a href="/news/" data-tooltip="">
-          News
-        </a>
-      
-    
-      
-        <a href="/contact/" data-tooltip="">
-          Contact
-        </a>
-      
-    
+  <body id="ums-studio" data-theme="dark" class="studio-ui page-home">
+    <a class="studio-skip" href="#main-content">Skip to content</a>
+    <header class="u-header">
+  <div class="u-top">
+    <a href="/" class="u-brand">
+      <img class="u-logo" src="/images/logo.jpg" width="60" height="31" alt="Urban Morphology Studio logo">
+      <span>URBAN MORPHOLOGY<br>STUDIO</span>
+    </a>
+    <div class="u-themes" role="group" aria-label="Color theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Bright</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="true">Dark</button>
+    </div>
+  </div>
+  <nav class="u-nav" aria-label="Main navigation">
+    <a href="/" aria-current="page">Home</a>
+    <a href="/research/">Research</a>
+    <a href="/team/">Team</a>
+    <a href="/news/">News</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </header>
 
-    <main>
-      <!--
-  modify main content of page:
-  - add section breaks
-  - attach section properties
-  - filter out blank sections
--->
+    <main class="u-page" id="main-content">
+      
+        
 
 
-
-
-
+<div class="u-home-head">
+<h1>A closer look at cities.</h1>
+<button class="u-motion" type="button" data-motion aria-pressed="false">Pause motion</button>
+</div>
+<div class="u-tiles">
+  <div class="u-tile u-hero">
+    <canvas class="u-hero-art" aria-hidden="true"></canvas>
+    <span class="u-kicker">HKUST · Guangzhou</span>
+    <div>
+<h2>Understanding the city.<br>Shaping what's next.</h2>
+<p>Urban form, human experience, and computational discovery.</p>
+</div>
+    <div class="u-tile-foot">
+<span>Urban Morphology Studio</span><a href="/about/">About →</a>
+</div>
+  </div>
+  
+  
+  <div class="u-tile u-flip u-home-feature" data-flip="featured">
+  <button class="u-flip-button" type="button" aria-label="Flip featured research" aria-controls="flip-featured" aria-expanded="false"><i class="icon fa-solid fa-rotate"></i><span>Flip</span></button>
+  <div class="u-flip-inner" id="flip-featured">
+    <div class="u-face u-front-face">
+<span class="u-kicker">Featured research</span><div class="u-feature-topics">
+<h3><a href="/research/">Urban Morphology &amp; Urban Activities</a></h3>
+<h3 hidden><a href="/research/">Human-Perceived Urban Space</a></h3>
+<h3 hidden><a href="/research/">AI for Urban Evaluation &amp; Redevelopment</a></h3>
+</div>
+<div class="u-tile-foot"><span>Three research directions</span></div>
+</div>
+    <div class="u-face u-back-face" aria-hidden="true" inert>
+<span class="u-kicker">Research directions</span><ul class="u-home-project-list">
+<li><a href="/research/">Urban Morphology &amp; Urban Activities →</a></li>
+<li><a href="/research/">Human-Perceived Urban Space →</a></li>
+<li><a href="/research/">AI for Urban Evaluation &amp; Redevelopment →</a></li>
+</ul>
+<a class="u-link" href="/research/">All research →</a>
+</div>
+  </div>
+</div>
 
   
   
-  
+  <div class="u-tile u-flip u-home-publications" data-flip="publications">
+  <button class="u-flip-button" type="button" aria-label="Flip publications" aria-controls="flip-publications" aria-expanded="false"><i class="icon fa-solid fa-rotate"></i><span>Flip</span></button>
+  <div class="u-flip-inner" id="flip-publications">
+    <div class="u-face u-front-face">
+<span class="u-kicker">Latest publication</span><div class="u-latest-publication"><div>
+<h3><a href="https://doi.org/hcc4pn">UST-GNN: A unified spatial–topological graph neural network framework for urban analytics demonstrated through a case study on urban health prediction</a></h3>
+<p class="u-latest-venue">Computers, Environment and Urban Systems · 2026</p>
+</div></div>
+<div class="u-tile-foot">
+<span>30 publications</span><a href="/research/">All publications →</a>
+</div>
+</div>
+    <div class="u-face u-back-face" aria-hidden="true" inert>
+<span class="u-kicker">Recent publications</span><ol class="u-home-publication-list">
+<li>
+<span class="u-paper-number">01</span><div>
+<a href="https://doi.org/hcc4pn">UST-GNN: A unified spatial–topological graph neural network framework for urban analytics demonstrated through a case study on urban health prediction</a><span class="u-paper-meta">Computers, Environment and Urban Systems · 2026</span>
+</div>
+</li>
+<li>
+<span class="u-paper-number">02</span><div>
+<a href="https://doi.org/hckmm7">Street space as health infrastructure: diagnosing uneven street support for exercise through the spatial triad</a><span class="u-paper-meta">Building and Environment · 2026</span>
+</div>
+</li>
+<li>
+<span class="u-paper-number">03</span><div>
+<a href="https://doi.org/hcc4pj">Theory-informed and interpretable graph learning for urban commuting flows</a><span class="u-paper-meta">Sustainable Cities and Society · 2026</span>
+</div>
+</li>
+</ol>
+<a class="u-link" href="/research/">All publications (30) →</a>
+</div>
+  </div>
+</div>
 
-  <section class="background" data-size="page">
-    <h1 id="urban-morphology-studio">Urban Morphology Studio</h1>
+  
+  
+  <div class="u-tile u-flip u-home-people" data-flip="people">
+  <button class="u-flip-button" type="button" aria-label="Flip people" aria-controls="flip-people" aria-expanded="false"><i class="icon fa-solid fa-rotate"></i><span>Flip</span></button>
+  <div class="u-flip-inner" id="flip-people">
+    <div class="u-face u-front-face">
+<span class="u-kicker">The studio</span><div>
+<h3>Many lenses.<br>One city.</h3>
+<div class="u-mini-portraits" aria-hidden="true">
+<img src="/images/wucai.png" alt=""><img src="/images/yunlei.png" alt=""><img src="/images/mingwei.png" alt=""><img src="/images/dailuo.png" alt=""><img src="/images/jiawang.png" alt="">
+</div>
+</div>
+<div class="u-tile-foot">
+<span>Meet our people</span><span>15 members</span>
+</div>
+</div>
+    <div class="u-face u-back-face" aria-hidden="true" inert>
+<span class="u-kicker">People</span><div class="u-collage">
+<a href="/members/01-wu-cai.html"><img src="/images/wucai.png" alt="Cai Wu" loading="lazy">Cai Wu</a><a href="/members/02-yun-lei.html"><img src="/images/yunlei.png" alt="Yunlei Su" loading="lazy">Yunlei Su</a><a href="/members/03-ming-wei.html"><img src="/images/mingwei.png" alt="Minwei Zhao" loading="lazy">Minwei Zhao</a><a href="/members/04-dai-luo.html"><img src="/images/dailuo.png" alt="Dailuo Zhang" loading="lazy">Dailuo Zhang</a><a href="/members/05-jia-wang.html"><img src="/images/jiawang.png" alt="Jiawang Du" loading="lazy">Jiawang Du</a><a href="/members/06-guo-sheng.html"><img src="/images/guosheng.jpg" alt="Guosheng Yang" loading="lazy">Guosheng Yang</a><a href="/members/07-han-zhi.html"><img src="/images/hanzhi.png" alt="Hanzhi Zu" loading="lazy">Hanzhi Zu</a><a href="/members/08-dong-zhi.html"><img src="/images/dongzhi.jpg" alt="Dongzhi Luo" loading="lazy">Dongzhi Luo</a><a href="/members/09-zhe-cheng.html"><img src="/images/zhecheng.jpg" alt="Zhecheng Shi" loading="lazy">Zhecheng Shi</a><a href="/members/10-qi-ming.html"><img src="/images/qiming.jpg" alt="Qiming Liu" loading="lazy">Qiming Liu</a><a href="/members/11-baichuan-lu.html"><img src="/images/baichuan.jpg" alt="Baichuan Lu" loading="lazy">Baichuan Lu</a><a href="/members/12-bevis-liao.html"><img src="/images/boweiliao.jpg" alt="Bevis Liao" loading="lazy">Bevis Liao</a><a href="/members/13-sitao-fang.html"><img src="/images/sitao.jpg" alt="Sitao Fang" loading="lazy">Sitao Fang</a><a href="/members/14-junhong-wang.html"><img src="/images/junhong.jpg" alt="Junhong Wang" loading="lazy">Junhong Wang</a><a href="/members/99-yuwei-yan.html"><img src="/images/yuwei-yan.png" alt="Yuwei Yan" loading="lazy">Yuwei Yan</a>
+</div>
+<a class="u-link" href="/team/">Everyone →</a>
+</div>
+  </div>
+</div>
+
+  
+  
+  <div class="u-tile u-flip u-home-news" data-flip="news">
+  <button class="u-flip-button" type="button" aria-label="Flip research updates" aria-controls="flip-news" aria-expanded="false"><i class="icon fa-solid fa-rotate"></i><span>Flip</span></button>
+  <div class="u-flip-inner" id="flip-news">
+    <div class="u-face u-front-face">
+<span class="u-kicker">Research updates</span><div>
+<p class="u-small">25 Sep 2026</p>
+<h3><a href="/2026/09/25/eccv-2026-gated-communities.html">Now Out at ECCV 2026: Mapping Gated Communities through Multimodal Urban Vision</a></h3>
+</div>
+<div class="u-tile-foot">
+<span>Recent news</span><span>11 updates</span>
+</div>
+</div>
+    <div class="u-face u-back-face" aria-hidden="true" inert>
+<span class="u-kicker">Recent news</span><ul class="u-home-news-list">
+<li><a href="/2026/09/25/eccv-2026-gated-communities.html"><time datetime="2026-09-25T00:00:00+00:00">25 Sep 2026</time><span>Now Out at ECCV 2026: Mapping Gated Communities through Multimodal Urban Vision</span></a></li>
+<li><a href="/2026/07/30/ust-gnn-urban-health.html"><time datetime="2026-07-30T00:00:00+00:00">30 Jul 2026</time><span>Now Out in Computers, Environment and Urban Systems: UST-GNN for Urban Health Analytics</span></a></li>
+<li><a href="/2026/07/30/pig-gnn-urban-commuting-flows.html"><time datetime="2026-07-30T00:00:00+00:00">30 Jul 2026</time><span>Now Out in Sustainable Cities and Society: Theory-Informed Graph Learning for Urban Commuting Flows</span></a></li>
+<li><a href="/2026/07/30/beyond-fidelity-vr-city-modeling.html"><time datetime="2026-07-30T00:00:00+00:00">30 Jul 2026</time><span>Now Out in International Journal of Applied Earth Observation and Geoinformation: Beyond Fidelity in VR City Modeling</span></a></li>
+</ul>
+<a class="u-link" href="/news/">All news →</a>
+</div>
+  </div>
+</div>
+
+  
+  
+  <div class="u-tile u-flip u-home-code" data-flip="resources">
+  <button class="u-flip-button" type="button" aria-label="Flip code and data" aria-controls="flip-resources" aria-expanded="false"><i class="icon fa-solid fa-rotate"></i><span>Flip</span></button>
+  <div class="u-flip-inner" id="flip-resources">
+    <div class="u-face u-front-face">
+<span class="u-kicker">Resources</span><h3>Code &amp; data</h3>
+<div class="u-tile-foot"><span>Open research</span></div>
+</div>
+    <div class="u-face u-back-face" aria-hidden="true" inert>
+<p>Gaze analysis and supporting resources for VR city modeling.</p>
+<a class="u-link" href="https://github.com/suyunlei/Perception-LOD">Perception-LOD →</a><a class="u-link" href="/research/">Publication resources →</a>
+</div>
+  </div>
+</div>
+
+  <a class="u-tile u-home-contact" href="/contact/"><span class="u-kicker">Contact</span><h3>Let's study cities together.</h3>
+<div class="u-tile-foot">
+<span>Collaborate or join the studio</span><span>→</span>
+</div></a>
+</div>
+
+<details class="studio-overview">
+  <summary>About the studio, research updates and announcements</summary>
+  <div class="studio-prose">
+<h1 id="urban-morphology-studio">Urban Morphology Studio</h1>
 
 <p><a href="https://suyunlei.github.io/UMS/">Urban Morphology Studio (UMS)</a>, based at the Hong Kong University of Science and Technology (Guangzhou), is dedicated to advancing urban spatial research through a multidisciplinary lens. Leveraging cutting-edge quantitative methods—including big data analytics, geographic information science (GIS), and artificial intelligence (AI)—our studio explores the social, economic, geographic, ecological, and environmental dimensions of urban form and function.</p>
 
@@ -505,14 +613,9 @@
 
   </div>
 </div>
-  </section>
 
-  
-  
-  
 
-  <section class="background" data-size="page">
-    <!--
+<!--
   <background></background>
   <dark></dark>
   <size></size>
@@ -595,180 +698,21 @@
     </div>
   </div>
 </div>
-  </section>
+</div>
+</details>
 
-
+      
     </main>
-    
-
-
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <!-- <div>
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="mailto:contact@your-lab.com"
-      
-        data-tooltip="Email"
-      
-      data-style="bare"
-      
-      aria-label="Email"
-    >
-      <i class="icon fa-solid fa-envelope"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://orcid.org/0000-0002-5578-5525"
-      
-        data-tooltip="ORCID"
-      
-      data-style="bare"
-      
-      aria-label="ORCID"
-    >
-      <i class="icon fa-brands fa-orcid"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://scholar.google.com/citations?user=ETJoidYAAAAJ"
-      
-        data-tooltip="Google Scholar"
-      
-      data-style="bare"
-      
-      aria-label="Google Scholar"
-    >
-      <i class="icon fa-brands fa-google"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://github.com/your-lab"
-      
-        data-tooltip="GitHub"
-      
-      data-style="bare"
-      
-      aria-label="GitHub"
-    >
-      <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://twitter.com/YourLabHandle"
-      
-        data-tooltip="Twitter"
-      
-      data-style="bare"
-      
-      aria-label="Twitter"
-    >
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://youtube.com/YourLabChannel"
-      
-        data-tooltip="YouTube"
-      
-      data-style="bare"
-      
-      aria-label="YouTube"
-    >
-      <i class="icon fa-brands fa-youtube"></i>
-      
-    </a>
-  </div>
-
-
-    
-  </div> -->
-
+    <footer class="u-footer">
+  <span>© 2026 Urban Morphology Studio · HKUST(GZ)</span>
   <div>
-    © 2026
-    
-      |   Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
-    </a>
-  </div>
+<a href="/projects/">Projects</a><a href="/feed.xml">RSS</a><a href="mailto:caiwu@hkust-gz.edu.cn">Contact</a><a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
+</div>
 </footer>
 
-    <button id="back-to-top" class="back-to-top" data-tooltip="回到顶部">
+    <button id="back-to-top" class="back-to-top" data-tooltip="Back to top" aria-label="Back to top">
   <i class="icon fa-solid fa-arrow-up"></i>
 </button>
+
   </body>
 </html>

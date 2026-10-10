@@ -83,12 +83,18 @@
 
     // filter elements
     for (const element of elements) {
-      if (elementMatches(element, parts)) {
+      const year = document.querySelector('[data-publication-year]')?.value || 'all';
+      if (elementMatches(element, parts) && (year === 'all' || element.dataset.year === year)) {
         element.style.display = "";
         x++;
       } else element.style.display = "none";
+      const container = element.closest('.citation-container, .post-excerpt-container');
+      if (container) container.hidden = element.style.display === 'none';
     }
 
+    document.querySelectorAll('.studio-year-group').forEach(group => {
+      group.hidden = [...group.querySelectorAll('.citation-container')].every(item => item.hidden);
+    });
     return [x, n, tags];
   };
 
@@ -210,6 +216,9 @@
 
   // after page loads
   window.addEventListener("load", searchFromUrl);
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('[data-publication-year]')?.addEventListener('change', searchFromUrl);
+  });
   // after tags load
   window.addEventListener("tagsfetched", searchFromUrl);
 }

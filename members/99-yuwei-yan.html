@@ -59,13 +59,13 @@
 <meta property="og:title" content="Yuwei Yan">
 <meta property="og:site_title" content="">
 <meta property="og:description" content="PhD Student">
-<meta property="og:url" content="https://urbanmorphology.studio">
+<meta property="og:url" content="">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Yuwei Yan">
 <meta property="twitter:description" content="PhD Student">
-<meta property="twitter:url" content="https://urbanmorphology.studio">
+<meta property="twitter:url" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="/images/share.jpg">
 
@@ -86,11 +86,11 @@
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
     },
-    "url": "https://urbanmorphology.studio"
+    "url": ""
   }
 </script>
 
-<link rel="alternate" type="application/rss+xml" href="https://urbanmorphology.studio/feed.xml">
+<link rel="alternate" type="application/rss+xml" href="/feed.xml">
 
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
@@ -297,6 +297,7 @@
 
 
 
+  <link rel="stylesheet" href="/assets/studio.css">
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -320,68 +321,34 @@
   <script src="/_scripts/tooltip.js"></script>
 
 
+  <script src="/assets/studio.js" defer></script>
 </head>
 
-  <body>
-    
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/background-clear.jpg')" data-dark="true">
-  <a href="/" class="home">
-    
-      <span class="logo">
-        
-          <img src="/images/logo.jpg" alt="logo">
-        
-      </span>
-    
-    
-      <span class="title-text">
-        <span class="title">Urban Morphology Studio</span>
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-    
-      
-        <a href="/research/" data-tooltip="">
-          Research
-        </a>
-      
-    
-      
-        <a href="/team/" data-tooltip="">
-          Team
-        </a>
-      
-    
-      
-        <a href="/news/" data-tooltip="">
-          News
-        </a>
-      
-    
-      
-        <a href="/contact/" data-tooltip="">
-          Contact
-        </a>
-      
-    
+  <body id="ums-studio" data-theme="dark" class="studio-ui ">
+    <a class="studio-skip" href="#main-content">Skip to content</a>
+    <header class="u-header">
+  <div class="u-top">
+    <a href="/" class="u-brand">
+      <img class="u-logo" src="/images/logo.jpg" width="60" height="31" alt="Urban Morphology Studio logo">
+      <span>URBAN MORPHOLOGY<br>STUDIO</span>
+    </a>
+    <div class="u-themes" role="group" aria-label="Color theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Bright</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="true">Dark</button>
+    </div>
+  </div>
+  <nav class="u-nav" aria-label="Main navigation">
+    <a href="/">Home</a>
+    <a href="/research/">Research</a>
+    <a href="/team/" aria-current="page">Team</a>
+    <a href="/news/">News</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
   </nav>
 </header>
 
-    <main>
+    <main class="u-page" id="main-content">
+      
       <!--
   modify main content of page:
   - add section breaks
@@ -399,41 +366,9 @@
   
 
   <section class="background" data-size="page">
-    <div class="float">
-  
-<div class="portrait-wrapper ">
-  <a class="portrait" data-style="" aria-label="Yuwei Yan">
-    
-
-    <img src="/images/yuwei-yan.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Yuwei Yan
-      </span>
-    
-    
-    
-      <span class="portrait-name">
-        严宇威
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div>
-  
-    
-    
-    
+    <a class="u-back" href="/team/">← Team</a>
+<article class="u-profile">
+  <aside><img class="u-profile-photo" src="/images/yuwei-yan.png" alt="Yuwei Yan"><div class="u-person-links">
 
 
 
@@ -446,11 +381,7 @@
     </a>
   </div>
 
-<br>
-  
-    
-    
-    
+
 
 
 
@@ -463,11 +394,7 @@
     </a>
   </div>
 
-<br>
-  
-    
-    
-    
+
 
 
 
@@ -480,236 +407,46 @@
     </a>
   </div>
 
-<br>
-  
+</div></aside>
+  <div>
+<div class="u-profile-name">
+<h1>Yuwei Yan</h1>
+<span class="u-cn">严宇威</span>
 </div>
-
-<style>
-  .button[data-style="bare"] {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-</style>
-
-
+<p class="u-profile-role">PhD Student</p>
+<div class="u-profile-bio">
+<p>Yuwei Yan is a PhD student in the Computational Media and Arts Thrust, Information Hub, at The Hong Kong University of Science and Technology (Guangzhou). His research interests include generative models, agent systems, and simulation. His work explores LLM-driven agents for modeling human behavior and social interactions, including contributions to AgentSociety and the AgentSociety Challenge.</p>
 </div>
-
-
-<!-- 1. 显示英文名 -->
-
-<h2 style="text-align: center; margin-top: -15px; color: #666; font-size: 1.5rem; font-weight: normal;">严宇威</h2>
-
-
-<!-- 2. 核心修复：必须有这行代码，Markdown里的文字才会显示！ -->
-<div class="member-content" style="margin-top: 20px; margin-bottom: 20px;">
-  <p>Yuwei Yan is a PhD student in the Computational Media and Arts Thrust, Information Hub, at The Hong Kong University of Science and Technology (Guangzhou). His research interests include generative models, agent systems, and simulation. His work explores LLM-driven agents for modeling human behavior and social interactions, including contributions to AgentSociety and the AgentSociety Challenge.</p>
-
-</div>
-
-<!-- 3. 教育背景和研究兴趣 -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; clear: both;">
-  
-  <div style="flex: 1; min-width: 250px; background: #f7f7fa; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="border-left: 4px solid #4f8cff; padding-left: 0.5rem; color: #2a3b4d;">Education</h3>
-    <ul style="margin-top: 1rem;">
-      
-        <li style="margin-bottom: 0.5rem;">🎓 MSc in Computer Science and Technology, Hunan University 2024</li>
-      
-        <li style="margin-bottom: 0.5rem;">🎓 BSc in Transportation Engineering, Hohai University 2021</li>
-      
-    </ul>
+    <div class="u-profile-background">
+      <section><h2>Research interests</h2>
+<ul class="u-interest-list">
+<li>Generative Model</li>
+<li>Agent System</li>
+<li>Simulation</li>
+</ul></section>
+      <section><h2>Education</h2>
+<ul class="u-education">
+<li>MSc in Computer Science and Technology, Hunan University 2024</li>
+<li>BSc in Transportation Engineering, Hohai University 2021</li>
+</ul></section>
+    </div>
   </div>
-  
-
-  
-  <div style="flex: 1; min-width: 250px; background: #f7f7fa; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="border-left: 4px solid #ffb347; padding-left: 0.5rem; color: #2a3b4d;">Research Interest</h3>
-    <ul style="margin-top: 1rem;">
-      
-        <li style="margin-bottom: 0.5rem;">Generative Model</li>
-      
-        <li style="margin-bottom: 0.5rem;">Agent System</li>
-      
-        <li style="margin-bottom: 0.5rem;">Simulation</li>
-      
-    </ul>
-  </div>
-  
-</div>
+</article>
   </section>
 
 
+      
     </main>
-    
-
-
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <!-- <div>
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="mailto:contact@your-lab.com"
-      
-        data-tooltip="Email"
-      
-      data-style="bare"
-      
-      aria-label="Email"
-    >
-      <i class="icon fa-solid fa-envelope"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://orcid.org/0000-0002-5578-5525"
-      
-        data-tooltip="ORCID"
-      
-      data-style="bare"
-      
-      aria-label="ORCID"
-    >
-      <i class="icon fa-brands fa-orcid"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://scholar.google.com/citations?user=ETJoidYAAAAJ"
-      
-        data-tooltip="Google Scholar"
-      
-      data-style="bare"
-      
-      aria-label="Google Scholar"
-    >
-      <i class="icon fa-brands fa-google"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://github.com/your-lab"
-      
-        data-tooltip="GitHub"
-      
-      data-style="bare"
-      
-      aria-label="GitHub"
-    >
-      <i class="icon fa-brands fa-github"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://twitter.com/YourLabHandle"
-      
-        data-tooltip="Twitter"
-      
-      data-style="bare"
-      
-      aria-label="Twitter"
-    >
-      <i class="icon fa-brands fa-twitter"></i>
-      
-    </a>
-  </div>
-
-
-    
-      
-      
-      
-
-
-
-  <div class="button-wrapper">
-    <a
-      class="button"
-      href="https://youtube.com/YourLabChannel"
-      
-        data-tooltip="YouTube"
-      
-      data-style="bare"
-      
-      aria-label="YouTube"
-    >
-      <i class="icon fa-brands fa-youtube"></i>
-      
-    </a>
-  </div>
-
-
-    
-  </div> -->
-
+    <footer class="u-footer">
+  <span>© 2026 Urban Morphology Studio · HKUST(GZ)</span>
   <div>
-    © 2026
-    
-      |   Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
-    </a>
-  </div>
+<a href="/projects/">Projects</a><a href="/feed.xml">RSS</a><a href="mailto:caiwu@hkust-gz.edu.cn">Contact</a><a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a>
+</div>
 </footer>
 
-    <button id="back-to-top" class="back-to-top" data-tooltip="回到顶部">
+    <button id="back-to-top" class="back-to-top" data-tooltip="Back to top" aria-label="Back to top">
   <i class="icon fa-solid fa-arrow-up"></i>
 </button>
+
   </body>
 </html>
