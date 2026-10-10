@@ -4,7 +4,7 @@
   {% include meta.html %}
   {% include fonts.html %}
   {% include styles.html %}
-  <link rel="stylesheet" href="{{ '/assets/studio.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/studio.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
   {% include scripts.html %}
-  <script src="{{ '/assets/studio.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/studio.js' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}" defer></script>
 </head>
