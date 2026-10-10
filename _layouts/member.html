@@ -1,61 +1,13 @@
 ---
 layout: default
 ---
-
-{% capture floatcontent %}
-
-{% include portrait.html lookup=page.slug %}
-
-<div>
-  {% for link in page.links %}
-    {% assign key = link[0] %}
-    {% assign value = link[1] %}
-    {% include button.html type=key link=value style="bare" %}<br>
-  {% endfor %}
-</div>
-
-<style>
-  .button[data-style="bare"] {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-</style>
-
-{% endcapture %}
-
-{% include float.html content=floatcontent %}
-
-<!-- 1. 显示英文名 -->
-{% if page.ename %}
-<h2 style="text-align: center; margin-top: -15px; color: #666; font-size: 1.5rem; font-weight: normal;">{{ page.ename }}</h2>
-{% endif %}
-
-<!-- 2. 核心修复：必须有这行代码，Markdown里的文字才会显示！ -->
-<div class="member-content" style="margin-top: 20px; margin-bottom: 20px;">
-  {{ content }}
-</div>
-
-<!-- 3. 教育背景和研究兴趣 -->
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2rem; clear: both;">
-  {% if page.education %}
-  <div style="flex: 1; min-width: 250px; background: #f7f7fa; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="border-left: 4px solid #4f8cff; padding-left: 0.5rem; color: #2a3b4d;">Education</h3>
-    <ul style="margin-top: 1rem;">
-      {% for edu in page.education %}
-        <li style="margin-bottom: 0.5rem;">🎓 {{ edu }}</li>
-      {% endfor %}
-    </ul>
+<a class="u-back" href="{{ '/team/' | relative_url }}">&larr; Team</a>
+<article class="u-profile">
+  <aside><img class="u-profile-photo" src="{{ page.image | relative_url }}" alt="{{ page.name | escape }}"><div class="u-person-links">{% for link in page.links %}{% assign key = link[0] %}{% assign value = link[1] %}{% include button.html type=key link=value style="bare" %}{% endfor %}</div></aside>
+  <div><div class="u-profile-name"><h1>{{ page.name }}</h1>{% if page.ename %}<span class="u-cn">{{ page.ename }}</span>{% endif %}</div><p class="u-profile-role">{{ page.description | default: page.affiliation }}</p><div class="u-profile-bio">{{ content }}</div>
+    <div class="u-profile-background">
+      {% if page.research_interest %}<section><h2>Research interests</h2><ul class="u-interest-list">{% for interest in page.research_interest %}<li>{{ interest }}</li>{% endfor %}</ul></section>{% endif %}
+      {% if page.education %}<section><h2>Education</h2><ul class="u-education">{% for edu in page.education %}<li>{{ edu }}</li>{% endfor %}</ul></section>{% endif %}
+    </div>
   </div>
-  {% endif %}
-
-  {% if page.research_interest %}
-  <div style="flex: 1; min-width: 250px; background: #f7f7fa; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-    <h3 style="border-left: 4px solid #ffb347; padding-left: 0.5rem; color: #2a3b4d;">Research Interest</h3>
-    <ul style="margin-top: 1rem;">
-      {% for interest in page.research_interest %}
-        <li style="margin-bottom: 0.5rem;">{{ interest }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-</div>
+</article>

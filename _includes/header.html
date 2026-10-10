@@ -1,64 +1,20 @@
-{% assign image = page.header | default: site.header %}
-{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
-
-{% assign svg = "images/logo.svg" | file_exists %}
-{% assign png = "images/logo.png" | file_exists %}
-{% assign jpg = "images/logo.jpg" | file_exists %}
-{% assign gif = "images/logo.gif" | file_exists %}
-{% assign logo = svg | default: jpg | default: png | default: gif | default: nil %}
-{% assign logo_index = "images/logo-index.png" | file_exists %}
-
-<header
-  class="background"
-  {% if page.url == "/" %}
-    style="--image: url('{{ '/images/background.gif' | relative_url | uri_escape }}')"
-    data-home-background
-    data-not-sticky
-    data-home-layout
-  {% else %}
-    style="--image: url('{{ '/images/background-clear.jpg' | relative_url | uri_escape }}')"
-  {% endif %}
-  {% if dark == true or dark == false %}
-    data-dark="{{ dark }}"
-  {% endif %}
->
-  <a href="{{ "/" | relative_url }}" class="home">
-    {% if page.url == "/" and logo_index %}
-      <span class="logo">
-        <img src="{{ '/images/logo-index.png' | relative_url | uri_escape }}" alt="home logo" style="width: 150%;height: 150%;margin-top: 50px;">
-      </span>
-    {% elsif logo %}
-      <span class="logo" {% if page.url == "/" %}style="display: none;"{% endif %}>
-        {% if svg %}
-          {{ svg | file_read }}
-        {% else %}
-          <img src="{{ logo | relative_url | uri_escape }}" alt="logo">
-        {% endif %}
-      </span>
-    {% endif %}
-    {% if site.logo-text != false %}
-      <span class="title-text" {% if page.url == "/" %}style="display: none;"{% endif %}>
-        <span class="title">Urban Morphology Studio</span>
-      </span>
-    {% endif %}
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
-      | sort: "nav.order"
-    %}
-    {% for page in pages %}
-      {% if page.nav %}
-        <a
-          href="{{ page.dir | relative_url | uri_escape }}"
-          data-tooltip="{{ page.nav.tooltip | xml_escape }}"
-        >
-          {{ page.title }}
-        </a>
-      {% endif %}
-    {% endfor %}
+<header class="u-header">
+  <div class="u-top">
+    <a href="{{ '/' | relative_url }}" class="u-brand">
+      <img class="u-logo" src="{{ '/images/logo.jpg' | relative_url }}" width="60" height="31" alt="Urban Morphology Studio logo">
+      <span>URBAN MORPHOLOGY<br>STUDIO</span>
+    </a>
+    <div class="u-themes" role="group" aria-label="Color theme">
+      <button type="button" data-theme-choice="light" aria-pressed="false">Bright</button>
+      <button type="button" data-theme-choice="dark" aria-pressed="true">Dark</button>
+    </div>
+  </div>
+  <nav class="u-nav" aria-label="Main navigation">
+    <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}>Home</a>
+    <a href="{{ '/research/' | relative_url }}" {% if page.url contains '/research/' %}aria-current="page"{% endif %}>Research</a>
+    <a href="{{ '/team/' | relative_url }}" {% if page.url contains '/team/' or page.collection == 'members' %}aria-current="page"{% endif %}>Team</a>
+    <a href="{{ '/news/' | relative_url }}" {% if page.url contains '/news/' or page.collection == 'posts' %}aria-current="page"{% endif %}>News</a>
+    <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about/' %}aria-current="page"{% endif %}>About</a>
+    <a href="{{ '/contact/' | relative_url }}" {% if page.url contains '/contact/' %}aria-current="page"{% endif %}>Contact</a>
   </nav>
 </header>

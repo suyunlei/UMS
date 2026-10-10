@@ -1,0 +1,28 @@
+{% assign papers = site.data.citations | sort: 'date' | reverse %}
+{% assign latest_paper = papers | first %}
+{% assign latest_news = site.posts | first %}
+<div class="u-home-head"><h1>A closer look at cities.</h1><button class="u-motion" type="button" data-motion aria-pressed="false">Pause motion</button></div>
+<div class="u-tiles">
+  <div class="u-tile u-hero">
+    <canvas class="u-hero-art" aria-hidden="true"></canvas>
+    <span class="u-kicker">HKUST · Guangzhou</span>
+    <div><h2>Understanding the city.<br>Shaping what's next.</h2><p>Urban form, human experience, and computational discovery.</p></div>
+    <div class="u-tile-foot"><span>Urban Morphology Studio</span><a href="{{ '/about/' | relative_url }}">About &rarr;</a></div>
+  </div>
+  {% capture front %}<span class="u-kicker">Featured research</span><div class="u-feature-topics"><h3><a href="{{ '/research/' | relative_url }}">Urban Morphology &amp; Urban Activities</a></h3><h3 hidden><a href="{{ '/research/' | relative_url }}">Human-Perceived Urban Space</a></h3><h3 hidden><a href="{{ '/research/' | relative_url }}">AI for Urban Evaluation &amp; Redevelopment</a></h3></div><div class="u-tile-foot"><span>Three research directions</span></div>{% endcapture %}
+  {% capture back %}<span class="u-kicker">Research directions</span><ul class="u-home-project-list"><li><a href="{{ '/research/' | relative_url }}">Urban Morphology &amp; Urban Activities &rarr;</a></li><li><a href="{{ '/research/' | relative_url }}">Human-Perceived Urban Space &rarr;</a></li><li><a href="{{ '/research/' | relative_url }}">AI for Urban Evaluation &amp; Redevelopment &rarr;</a></li></ul><a class="u-link" href="{{ '/research/' | relative_url }}">All research &rarr;</a>{% endcapture %}
+  {% include studio-flip.html id="featured" class="u-home-feature" label="featured research" front=front back=back %}
+  {% capture front %}<span class="u-kicker">Latest publication</span><div class="u-latest-publication"><div><h3><a href="{{ latest_paper.link }}">{{ latest_paper.title }}</a></h3><p class="u-latest-venue">{{ latest_paper.publisher }} · {{ latest_paper.date | date: '%Y' }}</p></div>{% if latest_paper.image %}<img src="{{ latest_paper.image | relative_url }}" alt="{{ latest_paper.title | escape }}" {% include fallback.html %}>{% endif %}</div><div class="u-tile-foot"><span>{{ papers.size }} publications</span><a href="{{ '/research/' | relative_url }}">All publications &rarr;</a></div>{% endcapture %}
+  {% capture back %}<span class="u-kicker">Recent publications</span><ol class="u-home-publication-list">{% for paper in papers limit:3 %}<li><span class="u-paper-number">0{{ forloop.index }}</span><div><a href="{{ paper.link }}">{{ paper.title }}</a><span class="u-paper-meta">{{ paper.publisher }} · {{ paper.date | date: '%Y' }}</span></div></li>{% endfor %}</ol><a class="u-link" href="{{ '/research/' | relative_url }}">All publications ({{ papers.size }}) &rarr;</a>{% endcapture %}
+  {% include studio-flip.html id="publications" class="u-home-publications" label="publications" front=front back=back %}
+  {% capture front %}<span class="u-kicker">The studio</span><div><h3>Many lenses.<br>One city.</h3><div class="u-mini-portraits" aria-hidden="true">{% for member in site.members limit:5 %}<img src="{{ member.image | relative_url }}" alt="">{% endfor %}</div></div><div class="u-tile-foot"><span>Meet our people</span><span>{{ site.members.size }} members</span></div>{% endcapture %}
+  {% capture back %}<span class="u-kicker">People</span><div class="u-collage">{% for member in site.members %}<a href="{{ member.url | relative_url }}"><img src="{{ member.image | relative_url }}" alt="{{ member.name | escape }}" loading="lazy">{{ member.name }}</a>{% endfor %}</div><a class="u-link" href="{{ '/team/' | relative_url }}">Everyone &rarr;</a>{% endcapture %}
+  {% include studio-flip.html id="people" class="u-home-people" label="people" front=front back=back %}
+  {% capture front %}<span class="u-kicker">Research updates</span><div><p class="u-small">{{ latest_news.date | date: '%d %b %Y' }}</p><h3><a href="{{ latest_news.url | relative_url }}">{{ latest_news.title }}</a></h3></div><div class="u-tile-foot"><span>Recent news</span><span>{{ site.posts.size }} updates</span></div>{% endcapture %}
+  {% capture back %}<span class="u-kicker">Recent news</span><ul class="u-home-news-list">{% for post in site.posts limit:4 %}<li><a href="{{ post.url | relative_url }}"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %b %Y' }}</time><span>{{ post.title }}</span></a></li>{% endfor %}</ul><a class="u-link" href="{{ '/news/' | relative_url }}">All news &rarr;</a>{% endcapture %}
+  {% include studio-flip.html id="news" class="u-home-news" label="research updates" front=front back=back %}
+  {% capture front %}<span class="u-kicker">Resources</span><h3>Code &amp; data</h3><div class="u-tile-foot"><span>Open research</span></div>{% endcapture %}
+  {% capture back %}<p>Gaze analysis and supporting resources for VR city modeling.</p><a class="u-link" href="https://github.com/suyunlei/Perception-LOD">Perception-LOD &rarr;</a><a class="u-link" href="{{ '/research/' | relative_url }}">Publication resources &rarr;</a>{% endcapture %}
+  {% include studio-flip.html id="resources" class="u-home-code" label="code and data" front=front back=back %}
+  <a class="u-tile u-home-contact" href="{{ '/contact/' | relative_url }}"><span class="u-kicker">Contact</span><h3>Let's study cities together.</h3><div class="u-tile-foot"><span>Collaborate or join the studio</span><span>&rarr;</span></div></a>
+</div>

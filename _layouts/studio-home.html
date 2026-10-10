@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% include studio-home.html %}
+<details class="studio-overview">
+  <summary>About the studio, research updates and announcements</summary>
+  <div class="studio-prose">{{ content | replace: '<!-- section break -->', '' }}</div>
+</details>

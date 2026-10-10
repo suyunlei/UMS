@@ -1,0 +1,7 @@
+<div class="u-tile u-flip {{ include.class }}" data-flip="{{ include.id }}">
+  <button class="u-flip-button" type="button" aria-label="Flip {{ include.label }}" aria-controls="flip-{{ include.id }}" aria-expanded="false">{% include icon.html icon="fa-solid fa-rotate" %}<span>Flip</span></button>
+  <div class="u-flip-inner" id="flip-{{ include.id }}">
+    <div class="u-face u-front-face">{{ include.front }}</div>
+    <div class="u-face u-back-face" aria-hidden="true" inert>{{ include.back }}</div>
+  </div>
+</div>

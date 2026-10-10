@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body>
+  <body id="ums-studio" data-theme="dark" class="studio-ui {% if page.url == '/' %}page-home{% elsif page.url contains '/team/' %}page-team{% elsif page.url contains '/research/' %}page-research{% elsif page.url contains '/news/' %}page-news{% endif %}">
+    <a class="studio-skip" href="#main-content">Skip to content</a>
     {% include header.html %}
-    <main>
+    <main class="u-page" id="main-content">
+      {% if page.url == '/' %}
+        {{ content }}
+      {% else %}
       {% include content.html content=content %}
+      {% endif %}
     </main>
     {% include footer.html %}
     {% include back-to-top.html %}

@@ -9,7 +9,7 @@
 
 {% assign type = site.data.types[member.role] %}
 
-<div class="portrait-wrapper {% if page.url contains '/news/' %}news-portrait-wrapper{% endif %}">
+<div class="portrait-wrapper {% if page.url contains '/news/' %}news-portrait-wrapper{% endif %}" data-group="{{ member.group }}">
   <a
     {% if page.slug != member.slug %}
       href="{{ member.url | relative_url | uri_escape }}"

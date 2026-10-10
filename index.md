@@ -1,4 +1,5 @@
 ---
+layout: studio-home
 ---
 
 # Urban Morphology Studio

@@ -18,7 +18,8 @@ Main research directions include:
 
 {% include search-box.html %}
 
+<label class="studio-year">Publication year<select data-publication-year aria-label="Publication year"><option value="all">All years</option>{% assign years = site.data.citations | group_by_exp: 'paper', "paper.date | date: '%Y'" | sort: 'name' | reverse %}{% for year in years %}<option value="{{ year.name }}">{{ year.name }}</option>{% endfor %}</select></label>
+
 {% include search-info.html %}
 
 {% include list.html data="citations" component="citation" style="rich" %}
-
