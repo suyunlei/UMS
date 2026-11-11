@@ -1,0 +1,177 @@
+// Original feature style (keep this for other pages)
+$wrap: 800px;
+
+.feature {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 40px !important;
+  margin: 40px 0 !important;
+}
+
+.feature-image {
+  flex-shrink: 0 !important;
+  width: 40% !important;
+  aspect-ratio: 3 / 2 !important;
+  border-radius: var(--rounded) !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow) !important;
+}
+
+.feature-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.feature-text {
+  flex-grow: 1;
+}
+
+.feature-title {
+  font-size: var(--large);
+  text-align: center;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.feature[data-flip] {
+  flex-direction: row-reverse !important;
+}
+
+@media (max-width: $wrap) {
+  .feature {
+    flex-direction: column !important;
+  }
+
+  .feature-image {
+    width: 100% !important;
+    max-width: calc($wrap / 2) !important;
+  }
+}
+
+// New card style for highlights section (SEA.com style)
+.feature-cards {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important; 
+  gap: 20px !important;
+  margin: 40px 0 !important;
+  position: relative !important;
+  width: 100% !important; /* 确保占满整个宽度 */
+  height: auto !important; /* 让高度自适应内容 */
+  overflow: visible !important; /* 防止内容被裁剪 */
+}
+.feature-card-wrapper {
+  width: calc(50% - 10px) !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+  padding-top: 56.25% !important; /* 16:9 比例 */
+}
+
+.feature-card {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: var(--rounded) !important;
+  overflow: hidden !important;
+  box-shadow: var(--shadow) !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  transition: transform 0.3s ease !important;
+  display: block !important;
+}
+
+.feature-card-image {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+  
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.5s ease !important; 
+  }
+}
+
+.feature-card-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 2 !important;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0) 100%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important; /* 内容靠近底部 */
+  align-items: center !important;
+  padding: 25px !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  .feature-card-wrapper {
+    width: 100% !important;
+  }
+}
+
+.feature-card-icon {
+  margin-bottom: 20px !important;
+  
+  img, svg {
+    width: 64px !important;
+    height: 64px !important;
+    filter: brightness(0) invert(1) !important; // 确保图标是白色
+  }
+}
+
+.feature-card-title {
+  font-size: 1.5rem !important;
+  margin-bottom: 10px !important;
+  font-weight: var(--bold) !important;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+  width: 100% !important; // 保证宽度一致
+}
+
+.feature-card-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem !important;
+  max-width: 80% !important; // 限制文本宽度使其更集中
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+  
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+.feature-card-text .button-wrapper {
+  margin-top: 15px !important;
+}
+
+.feature-card-text .button {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  padding: 8px 16px !important;
+  transition: background 0.3s ease !important;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    width: 100% !important; // 在移动设备上变为单列
+    margin-bottom: 20px !important;
+  }
+}
